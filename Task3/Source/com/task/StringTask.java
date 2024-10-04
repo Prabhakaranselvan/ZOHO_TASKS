@@ -1,30 +1,55 @@
 package com.task;
-
+import com.exception.InvalidException;
 
 public class StringTask 
 {
-	private String str;
-    	public void set(String str)
-   	{
-        	this.str = str;
-    	}
-   	public int getLength()												//Method for Exercise_1
-    	{
+//Method To Check Whether the String is Null or Empty
+	private void checkNullOrEmpty(String str) throws InvalidException 
+	{
+        if (str == null || str.isEmpty()) 
+		{
+            throw new InvalidException("String is Null or Empty");
+        }
+    }
+
+//Method To Check Whether The Given No is Within Range
+	private void checkWithinRange(int range, int length) throws InvalidException 	
+	{
+        if (range > length || range <= 0) 
+		{
+            throw new InvalidException("Input is not within Required Range");
+        }
+    }
+//Method for Exercise_1
+   	public int getLength(String str) throws InvalidException
+    {
+		checkNullOrEmpty(str);
 		return str.length();
-    	}
-    	public char[] getCharArray() 											//Method for Exercise_2         
-    	{
-        	return str.toCharArray();
-    	}
-    	public char getfromLast(int fromLast)									//Method for Exercise_3
-    	{
-        	return str.charAt(str.length()-fromLast);
-    	}
-	public int getOccurance(char letter)									//Method for Exercise_4
-    	{
+    }
+
+//Method for Exercise_2
+    public char[] getCharArray(String str) throws InvalidException       
+    {
+		checkNullOrEmpty(str);
+       	return str.toCharArray();
+    }
+
+//Method for Exercise_3
+    public char getfromLast(String str, int fromLast) throws InvalidException		
+    {
+		checkNullOrEmpty(str);
+       	checkWithinRange(fromLast, str.length());
+       	return str.charAt(str.length() - fromLast);
+    }
+
+//Method for Exercise_4
+	public int getOccurance(String str, char letter) throws InvalidException		
+    {
+		checkNullOrEmpty(str);
 		int i = 0;
 		int occurance = 0;
-		while (i < str.length())
+		int length = str.length();
+		while (i < length)
 		{
 			if (letter == str.charAt(i)) 
 			{
@@ -32,112 +57,157 @@ public class StringTask
 			}
 			i++;
 		}
-        	return occurance;
+       	return occurance;
 	}
-	 public int getGreatestPosition(char letter)								//Method for Exercise_5
-    	{
+
+//Method for Exercise_5
+	 public int getGreatestPosition(String str, char letter) throws InvalidException						
+    {
+		checkNullOrEmpty(str);
 		int i = str.lastIndexOf(letter);
 		return (i+1);
-    	}
-	public String getLastCharacters(int last)									//Method for Exercise_6
+    }
+		
+//Method for Exercise_6
+	public String getLastCharacters(String str, int last) throws InvalidException						
 	{
+		checkNullOrEmpty(str);
+       	checkWithinRange(last, str.length());
 		return str.substring(str.length()-last);
 	}
-	public String getFirstCharacters(int first)									//Method for Exercise_7
+
+//Method for Exercise_7
+	public String getFirstCharacters(String str, int first) throws InvalidException						
 	{
+		checkNullOrEmpty(str);
+       	checkWithinRange(first, str.length());
 		return str.substring(0,first);
 	}
-	public String getReplaced(String startEnd, String replaceChars)				//Method for Exercise_8
+
+//Method for Exercise_8
+	public String getStartingReplaced(String str, String replaceChars) throws InvalidException			
 	{
-		if (startEnd.equalsIgnoreCase("start"))
-		{
-			return str.replaceFirst(str.substring(0,replaceChars.length()), replaceChars);
-			
-		}
-		if (startEnd.equalsIgnoreCase("end"))
-		{
-			return str.substring(0, str.length() - replaceChars.length()) + replaceChars;
-		}
-		else 
-		{
-			startEnd = "Invalid Input was provided";
-			return startEnd;
-		}
+		checkNullOrEmpty(str);
+       	checkNullOrEmpty(replaceChars);
+       	checkWithinRange(replaceChars.length(), str.length());
+		return str.replaceFirst(str.substring(0,replaceChars.length()), replaceChars);
 	}
-	public boolean checkStartsWith(String startsWith)							//Method for Exercise_9
+
+//Method for Exercise_8
+	public String getEndingReplaced(String str, String replaceChars) throws InvalidException					
 	{
+		checkNullOrEmpty(str);
+       	checkNullOrEmpty(replaceChars);
+       	checkWithinRange(replaceChars.length(), str.length());
+		return str.substring(0, str.length() - replaceChars.length()) + replaceChars;
+	}
+
+//Method for Exercise_9
+	public boolean checkStartsWith(String str, String startsWith) throws InvalidException				
+	{
+		checkNullOrEmpty(str);
+       	checkNullOrEmpty(startsWith);
 		return str.startsWith(startsWith);
 	}
-	public boolean checkEndsWith(String endsWith)							//Method for Exercise_10
+
+//Method for Exercise_10
+	public boolean checkEndsWith(String str, String endsWith)	throws InvalidException	
 	{
+		checkNullOrEmpty(str);
+       	checkNullOrEmpty(endsWith);
 		return str.endsWith(endsWith);
-	}	
-	public String changeToLowerCase()									//Method for Exercise_11
+	}
+
+//Method for Exercise_11	
+	public String changeToLowerCase(String str) throws InvalidException
 	{
+		checkNullOrEmpty(str);
 		return str.toLowerCase();
 	}
-	public String changeToUpperCase()									//Method for Exercise_12
+
+//Method for Exercise_12
+	public String changeToUpperCase(String str)	 throws InvalidException
 	{
+		checkNullOrEmpty(str);
 		return str.toUpperCase();
 	}
-	public String getReverse()											//Method for Exercise_13
-    	{
-		int i = str.length() - 1;
-		String reverse = "";
-		while (i  >= 0)
-		{
-			reverse += str.charAt(i);
-			i--;
-		}
-		return reverse;
-	}
-	public String getMultipleStringLine()									//Method for Exercise_14
+
+//Method for Exercise_13
+	public String getReverse(String str) throws InvalidException
 	{
+		checkNullOrEmpty(str);
+		char[] reverse = str.toCharArray();
+		int j = 0;
+		int k = reverse.length - 1;
+		while (j < k)
+		{
+			char temp = reverse[j] ;
+			reverse[j] = reverse[k] ;
+			reverse[k] =temp ;
+			j++ ;
+			k-- ;
+		}
+		return new String(reverse);
+		
+	}
+
+//Method for Exercise_14
+	public String getMultipleStringLine(String str) throws InvalidException
+	{
+		checkNullOrEmpty(str);
 		return str;
 	}
-	public String getConcatenatedLine()									//Method for Exercise_15
+
+//Method for Exercise_15
+	public String getConcatenatedLine(String str) throws InvalidException
 	{
+		checkNullOrEmpty(str);
 		return str.replaceAll(" ","");
 	}
-	public String getStringArray()											//Method for Exercise_16
+
+//Method for Exercise_16
+	public String[] getStringArray(String str) throws InvalidException
 	{
-		String[] stringArray = str.split(" ");
-		String stringResult="{";
-		for (int i = 0; i < stringArray.length; i++) 
+		checkNullOrEmpty(str);
+		return str.split(" ");
+	}
+
+//Method for Exercise_17
+	public String getMergedStrings(String toJoin,String[] mergedStringArray) throws InvalidException
+	{
+		checkNullOrEmpty(toJoin);
+       	if (mergedStringArray == null || mergedStringArray.length == 0) 
 		{
-            		stringResult += "\"" + stringArray[i] + "\"";
-           		 if (i < stringArray.length - 1) 
-			{
-				stringResult += ",";
-			}
-		}
-		stringResult += "}";	
-		return stringResult;
+        	throw new InvalidException("Invalid input for merging strings");
+     	}
+		return String.join(toJoin,mergedStringArray);
 	}
-	public String getMergedStrings(String[] stringArray)						//Method for Exercise_17
+
+//Method for Exercise_18
+	public boolean checkEquals(String str1, String str2) throws InvalidException
 	{
-		String mergedString = "";
-        	for (int i = 0; i < stringArray.length; i++) 
-		{
-            		mergedString += stringArray[i];
-           		 if (i < stringArray.length - 1) 
-			{
-                		mergedString += "-";
-			}	
-		}
-		return mergedString;
+		checkNullOrEmpty(str1);
+        checkNullOrEmpty(str2);
+		return str1.equals(str2);
 	}
-	public boolean checkEquals(String str2)									//Method for Exercise_18
+
+//Method for Exercise_19
+	public boolean checkEqualsIgnoreCase(String str1,String str2) throws InvalidException
 	{
-		return str.equals(str2);
+		checkNullOrEmpty(str1);
+        checkNullOrEmpty(str2);
+		return str1.equalsIgnoreCase(str2);
 	}
-	public boolean checkEqualsIgnoreCase(String str2)						//Method for Exercise_19
+
+//Method for Exercise_20
+	public String getTrim(String str) throws InvalidException
 	{
-		return str.equalsIgnoreCase(str2);
-	}
-	public String getTrim()												//Method for Exercise_20
-	{
+		checkNullOrEmpty(str);
 		return str.trim();
 	}
 
 }
+
+	
+	
+
