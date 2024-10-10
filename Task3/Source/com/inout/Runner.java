@@ -75,7 +75,7 @@ public class Runner
 					System.out.print("Enter the Position to be fetched from Last : ");
 					int fromLast = scanner.nextInt();
 					scanner.nextLine();
-					System.out.println(fromLast + " Positioned Letter or Char from Last : " + stringTask.getfromLast(taskInput, fromLast));
+					System.out.println(fromLast + " Positioned Letter or Char from Last : " + stringTask.getFromLast(taskInput, fromLast));
 				}
 				catch (InvalidException e) 
 				{
@@ -166,15 +166,18 @@ public class Runner
 					taskInput = scanner.nextLine();
 					System.out.print("Replacement should be made at Start or End : ");
 					String startEnd = scanner.nextLine();
+					System.out.print("No of characters to be Replaced at " + startEnd + " : ");
+					int noOfChar = scanner.nextInt();
+					scanner.nextLine();
 					System.out.print("Mention the Characters thats gonna Replace :  ");
 					String replaceChars = scanner.nextLine();
 					if (startEnd.equalsIgnoreCase("start"))
 					{
-						System.out.println("With " + replaceChars.length() + " Characters replaced at " + startEnd + " : " + stringTask.getStartingReplaced(taskInput, replaceChars)); 
+						System.out.println("With " + noOfChar + " Characters replaced at " + startEnd + " : " + stringTask.getStartingReplaced(taskInput, noOfChar, replaceChars)); 
 					}
 					else if (startEnd.equalsIgnoreCase("end"))
 					{
-						System.out.println("With " + replaceChars.length() + " Characters replaced at " + startEnd + " : " + stringTask.getEndingReplaced(taskInput, replaceChars)); 
+						System.out.println("With " + noOfChar + " Characters replaced at " + startEnd + " : " + stringTask.getEndingReplaced(taskInput, noOfChar, replaceChars)); 
 					} 
 					else
 					{
@@ -277,9 +280,13 @@ public class Runner
 				try
 				{
 					System.out.println("CONCATENATE LINE");
-					System.out.print("Enter The Line To be concatenated : ");
+					System.out.print("Enter The Line To be concatenated: ");
 					taskInput = scanner.nextLine();
-					System.out.println("Concatenated Line : " + stringTask.getConcatenatedLine(taskInput));
+					System.out.print("Enter The Character for Concatenation: ");
+					String concatenateAt = scanner.nextLine();
+					System.out.print("Enter The Character to Concatenate: ");
+					String concatenateWith = scanner.nextLine();
+					System.out.println("Concatenated Line : " + stringTask.getConcatenatedLine(taskInput, concatenateAt, concatenateWith));
 				}
 				catch (InvalidException e) 
 				{
@@ -293,7 +300,9 @@ public class Runner
 					System.out.println("GET STRING ARRAY");
 					System.out.print("Enter The Line To be converted into string array : ");
 					taskInput = scanner.nextLine();
-					String[] stringArray = stringTask.getStringArray(taskInput);
+					System.out.print("Enter Where the Split must Occur: ");
+					String splitAt = scanner.nextLine();
+					String[] stringArray = stringTask.getStringArray(taskInput, splitAt);
 					int strArrayLen = stringArray.length;
 					String stringResult="{";
 					for (int i = 0; i < strArrayLen; i++) 
@@ -317,17 +326,18 @@ public class Runner
 				try
 				{
 					System.out.println("MERGE STRINGS");
-					System.out.print("Enter the number of strings to be merged: ");
+					/*System.out.print("Enter the number of strings to be merged: ");
 					int noOfStrings = scanner.nextInt();
-					scanner.nextLine();
+					scanner.nextLine(); */
 					System.out.print("Enter the Character used to merge: ");
 					String toJoin = scanner.nextLine();
-					String[] mergedStringArray = new String[noOfStrings];
+					/*String[] mergedStringArray = new String[noOfStrings];
 					for (int i = 0; i < noOfStrings; i++) 
 					{
 						System.out.print("String " + (i + 1) + " : ");
 						mergedStringArray[i] = scanner.nextLine();
-					}
+					}*/
+					String[] mergedStringArray = null;
 					System.out.println("Merged String : " + stringTask.getMergedStrings(toJoin,mergedStringArray));
         		}
 				catch (InvalidException e) 
@@ -382,6 +392,7 @@ public class Runner
                     System.out.println(e.getMessage());
                 }
 				break;
+					
 			case "change":
 				System.out.print("Enter new string: ");
 				taskInput = scanner.nextLine();
