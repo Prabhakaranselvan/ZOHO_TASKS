@@ -12,9 +12,9 @@ public class Runner
 		Scanner scanner = new Scanner(System.in);
 		StringTask stringTask = new StringTask();
 		String taskInput;
-		if (abc.length == 0 || abc[0] == null ) 
+		if (abc.length == 0) 
 		{
-            System.out.println("Input string cannot be empty or null");
+            System.out.println("Initial input string is not provided");
 			System.out.print("Enter new String :");
 			taskInput = scanner.nextLine();
 		}
@@ -102,16 +102,16 @@ public class Runner
 			case "5":
 				try
 				{
-					System.out.println("GET GREATEST POSITION OF A CHARACTER");
+					System.out.println("GET GREATEST INDEX OF A CHARACTER");
 					System.out.print("Enter a string: ");
 					taskInput = scanner.nextLine();
-					System.out.print("Enter a character to find it's Greatest position : ");
+					System.out.print("Enter a character to find it's Greatest Index : ");
 					char letter2 = scanner.next().charAt(0);
 					scanner.nextLine();
-					int greatestPosition = stringTask.getGreatestPosition(taskInput, letter2);
-					if (greatestPosition > 0)
+					int greatestIndex = stringTask.getGreatestIndex(taskInput, letter2);
+					if (greatestIndex > 0)
 					{
-						System.out.println("Greatest Position of  " + letter2 + " is " + greatestPosition);
+						System.out.println("Greatest Index of " + letter2 + " is " + greatestIndex);
 					}
 					else
 					{
@@ -169,7 +169,7 @@ public class Runner
 					System.out.print("No of characters to be Replaced at " + startEnd + " : ");
 					int noOfChar = scanner.nextInt();
 					scanner.nextLine();
-					System.out.print("Mention the Characters thats gonna Replace :  ");
+					System.out.print("Mention the Characters thats gonna Replace : ");
 					String replaceChars = scanner.nextLine();
 					if (startEnd.equalsIgnoreCase("start"))
 					{
@@ -326,18 +326,17 @@ public class Runner
 				try
 				{
 					System.out.println("MERGE STRINGS");
-					/*System.out.print("Enter the number of strings to be merged: ");
+					System.out.print("Enter the number of strings to be merged: ");
 					int noOfStrings = scanner.nextInt();
-					scanner.nextLine(); */
+					scanner.nextLine(); 
 					System.out.print("Enter the Character used to merge: ");
 					String toJoin = scanner.nextLine();
-					/*String[] mergedStringArray = new String[noOfStrings];
+					String[] mergedStringArray = new String[noOfStrings];
 					for (int i = 0; i < noOfStrings; i++) 
 					{
 						System.out.print("String " + (i + 1) + " : ");
 						mergedStringArray[i] = scanner.nextLine();
-					}*/
-					String[] mergedStringArray = null;
+					}
 					System.out.println("Merged String : " + stringTask.getMergedStrings(toJoin,mergedStringArray));
         		}
 				catch (InvalidException e) 
