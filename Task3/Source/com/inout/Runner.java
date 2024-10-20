@@ -6,6 +6,23 @@ import com.exception.InvalidException;
 
 public class Runner
 {
+	private static void method3(StringTask stringTask, Scanner scanner) throws InvalidException
+	{
+		try
+		{
+			System.out.println("GET CHARACTER FROM LAST");
+					System.out.print("Enter a string: ");
+					String taskInput = scanner.nextLine();
+					System.out.print("Enter the Position to be fetched from Last : ");
+					int fromLast = scanner.nextInt();
+					scanner.nextLine();
+					System.out.println(fromLast + " Positioned Letter or Char from Last : " + stringTask.getFromLast(taskInput, fromLast));
+		}
+		catch (InvalidException e) 
+		{
+			throw new InvalidException("Invalid input", e);
+		}
+	}
 	public static void main (String[] abc)
     {
 		boolean isContinue = true;
@@ -69,17 +86,12 @@ public class Runner
 			case "3":
 				try
 				{
-					System.out.println("GET CHARACTER FROM LAST");
-					System.out.print("Enter a string: ");
-					taskInput = scanner.nextLine();
-					System.out.print("Enter the Position to be fetched from Last : ");
-					int fromLast = scanner.nextInt();
-					scanner.nextLine();
-					System.out.println(fromLast + " Positioned Letter or Char from Last : " + stringTask.getFromLast(taskInput, fromLast));
+					method3(stringTask, scanner);
 				}
 				catch (InvalidException e) 
 				{
                     System.out.println(e.getMessage());
+					System.out.println("Caused by:" + e.getCause());
                 }
 				break;
 				
@@ -378,6 +390,7 @@ public class Runner
                     System.out.println(e.getMessage());
                 }
 				break;
+				
 			case "20":
 				try
 				{
@@ -391,14 +404,16 @@ public class Runner
                     System.out.println(e.getMessage());
                 }
 				break;
-					
+		
 			case "change":
 				System.out.print("Enter new string: ");
 				taskInput = scanner.nextLine();
 				break;
+				
 			case "exit":
 				isContinue = false;
-				break;	
+				break;
+				
 			default:
 				System.out.println("Invalid Input");
 				break;
