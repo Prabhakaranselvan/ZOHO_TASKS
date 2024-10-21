@@ -90,8 +90,7 @@ public class Runner
 				}
 				catch (InvalidException e) 
 				{
-                    System.out.println(e.getMessage());
-					System.out.println("Caused by:" + e.getCause());
+                    e.printStackTrace();
                 }
 				break;
 				
@@ -419,6 +418,7 @@ public class Runner
 				break;
 			}
 		}
+	scanner.close();
 	}
 		   
 }
