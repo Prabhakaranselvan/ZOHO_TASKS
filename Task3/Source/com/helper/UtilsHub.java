@@ -5,9 +5,9 @@ public class UtilsHub
 {
 
 //Method To Check Whether the String is Null or Empty
-	public static void checkNull(Object str) throws InvalidException 
+	public static void checkNull(Object input) throws InvalidException 
 	{
-        if (str == null) 
+        if (input == null) 
 		{
             throw new InvalidException("Given Input is Null");
         }
@@ -25,9 +25,9 @@ public class UtilsHub
     }
 	
 //Method To Check Whether the Input is Zero
-	public static void checkZero(int str) throws InvalidException 
+	public static void checkZero(int input) throws InvalidException 
 	{
-        if (str == 0) 
+        if (input == 0) 
 		{
             throw new InvalidException("Input cannot be Zero");
         }
