@@ -1,6 +1,7 @@
 package com.stringbuilder.task;
 import com.helper.UtilsHub;
 import com.exception.InvalidException;
+import java.util.Arrays;
 
 public class SBTasks
 {
@@ -30,37 +31,11 @@ public class SBTasks
 		StringBuilder sb = new StringBuilder(cs);
 		return sb;
 	}
-	
-	//Method To Get Length
-   	public static int getLength(CharSequence cs) throws InvalidException
-    {
-		UtilsHub.checkNull(cs);
-		return cs.length();
-    }
-	public static int getLength(String[] strArray) throws InvalidException
-    {
-		UtilsHub.checkNull(strArray);
-		return strArray.length;
-    }
-	public static int getLength(int[] intArray) throws InvalidException
-    {
-		UtilsHub.checkNull(intArray);
-		return intArray.length;
-    }
-	
-	
-	//Method To check Negative Index
-	public static void checkNegIndex(int index) throws InvalidException
-	{
-		if (index < 0)
-		{
-			throw new InvalidException("Negative Indexing Occured : Searched String Unavailable");
-		}
-	}
 
 	//Method for Exercise_1
 	public void addString(StringBuilder sb, String str) throws InvalidException
 	{
+		UtilsHub.checkNull(sb);
 		sb.append(str);
 	}
 	
@@ -68,7 +43,7 @@ public class SBTasks
 	public void addStrings(StringBuilder sb, String[] strings, String delimiter) throws InvalidException
 	{
 		UtilsHub.checkNull(sb);
-		int length = getLength(strings);
+		int length = UtilsHub.getLength(strings);
         for(int i=0; i<length; i++) 
 		{
 			sb.append(delimiter);
@@ -79,55 +54,68 @@ public class SBTasks
 	//Method for Exercise_3
 	public void insertStrings(StringBuilder sb, String[] strings, String delimiter, int position) throws InvalidException
 	{   
-		int length = getLength(strings);
-		int delimiterLen = getLength(delimiter);
-		int insertIndex = customIndexOf(sb, delimiter, position);
-        for (int i=length; i>0; i--)
+		UtilsHub.checkNull(sb);
+		int length = UtilsHub.getLength(strings);
+		int delimiterLen = UtilsHub.getLength(delimiter);
+		UtilsHub.checkZero(position);
+		UtilsHub.checkNegative(position);
+		int insertIndex;
+		if (position == 1)
 		{
-            sb.insert(insertIndex, strings[i-1]);
+			insertIndex = 0;
+		}
+		else
+		{
+			insertIndex = customIndexOf(sb, delimiter, position-1);
+			UtilsHub.checkNegative(insertIndex);
+			insertIndex = insertIndex+delimiterLen;
+		}
+		for (int i=length; i>0; i--)
+		{
 			sb.insert(insertIndex, delimiter);
-        }
+			sb.insert(insertIndex, strings[i-1]);
+		}
     }
 	
 	//Method for Exercise_4
-	public void deleteStrings(StringBuilder sb, String[] strings, String delimiter, int[] num) throws InvalidException
+	public void deleteStrings(StringBuilder sb, String delimiter, int position) throws InvalidException
 	{
-		UtilsHub.checkNull(sb);
-		int length = getLength(strings);
-		int numLen = getLength(num);
-		int delimiterLen = getLength(delimiter);
-		String str;
-		int index,strLen,check;
-        for (int i = 0; i < numLen; i++) 
+		int Length = UtilsHub.getLength(sb);
+		int delimiterLen = UtilsHub.getLength(delimiter);
+		UtilsHub.checkZero(position);
+		UtilsHub.checkNegative(position);
+		int index1 = customIndexOf(sb, delimiter, position-1);
+		UtilsHub.checkNegative(index1);
+		int index2 = customIndexOf(sb, delimiter, position);
+		if (position == 1)
 		{
-			check = num[i];
-			UtilsHub.checkWithinRange(check, length);
-			str = strings[check-1];
-			index = firstIndexOf(sb, str);
-			strLen = getLength(str);
-			if (num[i]==1)
-			{
-				sb.delete(index,(index+strLen+delimiterLen));
-			}
-			if (num[i]>1)
-			{
-				sb.delete((index-delimiterLen),(index+strLen));
-			}
-        }
+			index2 = index2+delimiterLen;
+		}
+		else if (index2 == -1)
+		{
+			index2 = Length;
+		}
+		sb.delete(index1,index2);
     }
 	
 	//Method for Exercise_5
-	public void replacedelimiter(StringBuilder sb, String delimiter1, String delimiter2, int noOfReplacement) throws InvalidException
+	public void replaceDelimiter(StringBuilder sb, String delimiter1, String delimiter2) throws InvalidException
 	{
 		UtilsHub.checkNull(sb);
+		int delimiterLen = UtilsHub.getLength(delimiter1);
 		UtilsHub.checkNull(delimiter2);
-		int delimiterLen = getLength(delimiter1);
-		int fromIndex = 0;
-        for(int i=0 ; i<noOfReplacement; i++) 
+		boolean replace = true;
+        while(replace) 
 		{
-			int replaceIndex = indexOfFromSpecified(sb,delimiter1, fromIndex);
-			sb.replace(replaceIndex,(replaceIndex+delimiterLen), delimiter2);
-			fromIndex = replaceIndex+delimiterLen ;
+			int index = firstIndexOf(sb, delimiter1);
+			if (index != -1)
+			{
+				sb.replace(index,(index+delimiterLen), delimiter2);
+			}
+			else
+			{
+				replace = false;
+			}
 		}
     }
 	
@@ -141,7 +129,7 @@ public class SBTasks
 	//Method for Exercise_7
 	public void deleteCharacters(StringBuilder sb, int start, int end) throws InvalidException
 	{
-		int length = getLength(sb);
+		int length = UtilsHub.getLength(sb);
 		UtilsHub.checkWithinRange(start, end);
 		UtilsHub.checkWithinRange(end, length);
 		sb.delete(start, end);
@@ -150,10 +138,10 @@ public class SBTasks
 	//Method for Exercise_8
 	public void replaceCharacters(StringBuilder sb, int start, int end, String str) throws InvalidException
 	{
-		UtilsHub.checkNull(str);
-		int length = getLength(sb);
+		int length = UtilsHub.getLength(sb);
 		UtilsHub.checkWithinRange(start, end);
 		UtilsHub.checkWithinRange(end, length);
+		UtilsHub.checkNull(str);
 		sb.replace(start, end, str);
 	}
 	
@@ -162,9 +150,7 @@ public class SBTasks
 	{
 		UtilsHub.checkNull(sb);
 		UtilsHub.checkNull(str);
-		int index = sb.indexOf(str);
-		checkNegIndex(index); 
-		return index;
+		return sb.indexOf(str);
 	}
 	
 	//Method for Exercise_10
@@ -172,10 +158,7 @@ public class SBTasks
 	{
 		UtilsHub.checkNull(sb);
 		UtilsHub.checkNull(str);
-		int index = sb.lastIndexOf(str);
-		checkNegIndex(index);
-		return index;
-		
+		return sb.lastIndexOf(str);	
 	}
 	
 	//Method for custom Index position of a String
@@ -183,24 +166,47 @@ public class SBTasks
 	{
 		UtilsHub.checkNull(sb);
 		UtilsHub.checkNull(str);
+		UtilsHub.checkNegative(position);
 		int index = 0;
 		int fromIndex = 0;    
 		for (int i=0; i<position; i++)
 		{
 			index = sb.indexOf(str, fromIndex);
 			fromIndex = index+1;
-		}
-		checkNegIndex(index); 
+		} 
 		return index;
 	}
 	
-	//Method for First Index Of String from Specified Index
-	public int indexOfFromSpecified(StringBuilder sb, String str, int fromIndex) throws InvalidException
+	//Method for Delete Multiple Strings
+	public void deleteStrings(StringBuilder sb, String delimiter, Integer[] stringPosition) throws InvalidException
 	{
-		UtilsHub.checkNull(sb);
-		UtilsHub.checkNull(str);
-		int index = sb.indexOf(str, fromIndex);
-		checkNegIndex(index); 
-		return index;
-	}
+		int Length = UtilsHub.getLength(sb);
+		int delimiterLen = UtilsHub.getLength(delimiter);
+		int numOfStrings = UtilsHub.getLength(stringPosition);
+		int index1,index2,num,position;
+		Arrays.sort(stringPosition);
+        for (int i = 0; i < numOfStrings; i++) 
+		{
+			num = stringPosition[i];
+			if (num==1)
+			{
+				index1 = firstIndexOf(sb, delimiter);
+				sb.delete(0,(index1+delimiterLen));
+			}
+			if (num>1)
+			{
+				position = num-i-1;
+				index1 = customIndexOf(sb, delimiter, position);
+				index2 = customIndexOf(sb, delimiter, position+1);
+				if (index2 != -1)
+				{
+					sb.delete(index1,index2);
+				}
+				else
+				{
+					sb.delete(index1,Length);
+				};
+			}
+        }
+    }
 }

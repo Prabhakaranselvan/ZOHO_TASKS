@@ -1,21 +1,56 @@
 package com.stringbuilder.inout;
 import java.util.Scanner;
 import com.exception.InvalidException;
+import com.helper.UtilsHub;
 import com.stringbuilder.task.SBTasks;
 
 public class SBRunner
 {	
-	private static SBTasks sbTask = new SBTasks();
-	private static Scanner scanner = new Scanner(System.in);
+	SBTasks sbTask = new SBTasks();
+	Scanner scanner = new Scanner(System.in);
 	
+	//method to get an Input from user
+	private String getUserInput()
+	{
+			return scanner.nextLine();
+	}
+	
+	//Method to get an Integer
+	private int getInteger() throws InvalidException
+	{	
+		boolean get = true;
+		while (get)
+		{
+			if (scanner.hasNextInt())
+			{
+				get = false;
+				int num = scanner.nextInt();
+				scanner.nextLine();
+				return num;
+			}
+			else
+			{
+				scanner.nextLine();
+				System.out.print("Input Mismatch; Enter an Integer : ");
+			}
+		}
+		return 0;
+	}
+	
+	//method to close
+	private void closeScanner()
+	{
+			scanner.close();
+	}
+				
 	//Method to get Initial Strings
-	private static String[] getStringList()
+	private String[] getStringList() throws InvalidException
 	{
 		System.out.print("Enter the number of strings : ");
-		int numStrings = scanner.nextInt();
-		scanner.nextLine();
-		String[] strings = new String[numStrings];
-		for (int i = 0; i < numStrings; i++) 
+		int numOfStrings = getInteger();
+		UtilsHub.checkNegative(numOfStrings);
+		String[] strings = new String[numOfStrings];
+		for (int i = 0; i < numOfStrings; i++) 
 		{
 			System.out.print("Enter string " + (i+1) + " : ");
 			strings[i] = scanner.nextLine();
@@ -24,40 +59,49 @@ public class SBRunner
 	}
 	
 	//Method to create Initial StringBuilder
-	private static StringBuilder getInitialSB(String[] strings, String delimiter) throws InvalidException
+	private StringBuilder getInitialSB(String[] strings, String delimiter) throws InvalidException
 	{
-		int length = SBTasks.getLength(strings);
-		StringBuilder sb = sbTask.createSB(strings[0]);
-        for(int i=1; i<length; i++) 
+		int length = UtilsHub.getLength(strings);
+		if (length != 0)
 		{
-			sbTask.addString(sb, delimiter);
-            sbTask.addString(sb, strings[i]);
-        }
-		return sb;
+			StringBuilder sb = sbTask.createSB(strings[0]);
+			for(int i=1; i<length; i++) 
+			{
+				sbTask.addString(sb, delimiter);
+				sbTask.addString(sb, strings[i]);
+			}
+			return sb;
+		}
+		else
+		{
+			StringBuilder sb = sbTask.createSB();
+			return sb;
+		}
+		
 	}
 	
 	//Method to get Delimiter
-	private static String getDelimiter()
+	private String getDelimiter()
 	{
 		System.out.print("Enter the delimiter  : ");
 		return scanner.nextLine();
 	}
 	
 	//Method To Print
-	private static void printSBDetails(StringBuilder sb, String str) throws InvalidException
+	private void printSBDetails(StringBuilder sb, String str) throws InvalidException
     {
-		int length = SBTasks.getLength(sb);
+		int length = UtilsHub.getLength(sb);
 		System.out.println("\n" + str + " StringBuilder : " + sb);
 		System.out.println(str + " Length Of the StringBuilder : " + length);
     }
 	
-	private static void exercise1() throws InvalidException
+	private void exercise1() throws InvalidException
 	{
 		try
-		{	System.out.println("\nEXERCISE 1 : APPEND A STRING\n");
+		{	System.out.println("\nEXERCISE 1 : APPEND A STRING");
 			
 			StringBuilder sb = sbTask.createSB();
-			printSBDetails(sb, "Initial" );
+			printSBDetails(sb, "Initial");
 			
 			System.out.print("Enter the String To be Added : ");	
 			String str = scanner.nextLine();
@@ -67,11 +111,10 @@ public class SBRunner
 		catch (InvalidException e) 
 		{
 			throw new InvalidException("Exception Occured", e);
-		}
-			
+		}	
 	}	
 	
-	private static void exercise2() throws InvalidException
+	private void exercise2() throws InvalidException
 	{
 		try
 		{	System.out.println("\nEXCERCISE 2 : APPEND STRINGS\n");
@@ -93,7 +136,7 @@ public class SBRunner
 		}
 	}
 	
-	private static void exercise3() throws InvalidException
+	private void exercise3() throws InvalidException
 	{
 		try
 		{	System.out.println("\nEXERCISE 3 : INSERT STRINGS\n");
@@ -104,10 +147,8 @@ public class SBRunner
 			StringBuilder sb = getInitialSB(strings, delimiter);
 			printSBDetails(sb, "Initial");
 			
-			System.out.print("\nInsertion takes place between n and n+1 Strings\nHere, n is ");
-			int position = scanner.nextInt();
-			scanner.nextLine();
-			System.out.println("Insertion takes place between strings " + position + " and " + (position + 1));
+			System.out.print("\nEnter the String Num before which Insertion must occur : ");
+			int position = getInteger();
 			
 			System.out.println("\nFINAL STRINGS");
 			strings = getStringList();
@@ -120,10 +161,10 @@ public class SBRunner
 		}
 	}
 	
-	private static void exercise4() throws InvalidException
+	private void exercise4() throws InvalidException
 	{
 		try
-		{	System.out.println("\nEXERCISE 4 : DELETE STRINGS\n");
+		{	System.out.println("\nEXERCISE 4 : DELETE A STRING\n");
 			
 			System.out.println("INITIAL STRINGS");
 			String[] strings = getStringList();
@@ -131,18 +172,10 @@ public class SBRunner
 			StringBuilder sb = getInitialSB(strings, delimiter);
 			printSBDetails(sb, "Initial");
 			
-			System.out.print("\nEnter the No Of Strings To be Deleted : ");
-			int numStrings = scanner.nextInt();
-			scanner.nextLine();
-			int[] numbers = new int[numStrings];
-			for (int i=1; i<=numStrings ; i++)
-			{
-				System.out.print("Enter string Num : ");
-				numbers[i-1] = scanner.nextInt();
-				scanner.nextLine();
-			}
+			System.out.print("\nEnter the String Number To be Deleted : ");
+			int position = getInteger();
 			
-			sbTask.deleteStrings(sb, strings, delimiter, numbers);
+			sbTask.deleteStrings(sb, delimiter, position);
 			printSBDetails(sb, "Final");
 		}
 		catch (InvalidException e) 
@@ -151,11 +184,10 @@ public class SBRunner
 		}	
 	}
 	
-	private static void exercise5() throws InvalidException
+	private void exercise5() throws InvalidException
 	{
 		try
 		{	System.out.println("\nEXERCISE 5 : REPLACE DELIMITER\n");
-			
 			System.out.println("INITIAL STRINGS");
 			String[] strings = getStringList();
 			String delimiter = getDelimiter();
@@ -165,8 +197,7 @@ public class SBRunner
 			System.out.print("\nEnter the Replacement delimiter : ");
 			String delimiter2 = scanner.nextLine();
 			
-			int noOfReplacement = SBTasks.getLength(strings)-1;
-			sbTask.replacedelimiter(sb, delimiter, delimiter2, noOfReplacement);
+			sbTask.replaceDelimiter(sb, delimiter, delimiter2);
 			printSBDetails(sb, "Final");
 		}
 		catch (InvalidException e) 
@@ -175,7 +206,7 @@ public class SBRunner
 		}	
 	}
 	
-	private static void exercise6() throws InvalidException
+	private void exercise6() throws InvalidException
 	{
 		try
 		{	System.out.println("\nEXERCISE 6 : REVERSE STRINGBUILDER\n");
@@ -195,10 +226,10 @@ public class SBRunner
 		}	
 	}
 	
-	private static void exercise7() throws InvalidException
+	private void exercise7() throws InvalidException
 	{
 		try
-		{	System.out.println("\nEXERCISE 7 : DELETE CHARACTERS\n");
+		{	System.out.println("\nEXERCISE 7 : DELETE CHARACTERS\n"); 
 			
 			System.out.println("INITIAL STRINGS");
 			String[] strings = getStringList();
@@ -207,11 +238,9 @@ public class SBRunner
 			printSBDetails(sb, "Initial");
 			
 			System.out.print("\nStart Deleting Characters from Index : ");
-			int start = scanner.nextInt();
-			scanner.nextLine();
+			int start = getInteger();
 			System.out.print("Delete Characters Till Index :");
-			int end = scanner.nextInt();
-			scanner.nextLine();
+			int end = getInteger();
 			
 			sbTask.deleteCharacters(sb, start, end);
 			printSBDetails(sb, "Final");
@@ -222,7 +251,7 @@ public class SBRunner
 		}
 	}
 	
-	private static void exercise8() throws InvalidException
+	private void exercise8() throws InvalidException
 	{
 		try
 		{	System.out.println("\nEXERCISE 8 : REPLACE CHARACTERS\n");
@@ -234,11 +263,9 @@ public class SBRunner
 			printSBDetails(sb, "Initial");
 			
 			System.out.print("\nStart replacing Characters from Index : ");
-			int start = scanner.nextInt();
-			scanner.nextLine();
+			int start = getInteger();
 			System.out.print("Replace Characters Till Index :");
-			int end = scanner.nextInt();
-			scanner.nextLine();
+			int end = getInteger();
 			System.out.print ("Replacement String : ");
 			String replaceStr = scanner.nextLine();
 			
@@ -251,7 +278,7 @@ public class SBRunner
 		}
 	}
 	
-	private static void exercise9() throws InvalidException
+	private void exercise9() throws InvalidException
 	{
 		try
 		{	System.out.println("\nEXERCISE 9 : GET FIRST INDEX OF DELIMITER\n");
@@ -271,7 +298,7 @@ public class SBRunner
 		}
 	}
 	
-	private static void exercise10() throws InvalidException
+	private void exercise10() throws InvalidException
 	{
 		try
 		{	System.out.println("\nEXERCISE 10 : GET LAST INDEX OF DELIMITER\n");
@@ -295,7 +322,8 @@ public class SBRunner
     {
 		boolean isContinue = true;
 		String exercise;
-
+		SBRunner sbRunner = new SBRunner();
+		System.out.print("TASK : STRING_BUILDER\n\n1. APPEND A STRING\n2. APPEND STRINGS\n3. INSERT STRINGS\n4. DELETE A STRING\n5. REPLACE DELIMITER\n6. REVERSE STRINGBUILDER\n7. DELETE CHARACTERS\n8. REPLACE CHARACTERS\n9. GET FIRST INDEX OF DELIMITER\n10. GET LAST INDEX OF DELIMITER\n");
 		try
 		{
 			while(isContinue)
@@ -303,60 +331,61 @@ public class SBRunner
 				try
 				{
 					System.out.print("\nEnter the Excercise to carry out : ");
-					exercise = scanner.nextLine();
+					exercise = sbRunner.getUserInput();
 					switch (exercise)
 					{		
 					case "1":
-						exercise1();
+						sbRunner.exercise1();
 						break;
 							
 					case "2":
-						exercise2();
+						sbRunner.exercise2();
 						break;
 
 					case "3":
-						exercise3();
+						sbRunner.exercise3();
 						break;
 					
 					case "4":
-						exercise4();
+						sbRunner.exercise4();
 						break;
 						
 					case "5":
-						exercise5();
+						sbRunner.exercise5();
 						break;
 					
 					case "6":
-						exercise6();
+						sbRunner.exercise6();
 						break;
 						
 					case "7":
-						exercise7();
+						sbRunner.exercise7();
 						break;
 						
 					case "8":
-						exercise8();
+						sbRunner.exercise8();
 						break;
 						
 					case "9":
-						exercise9();
+						sbRunner.exercise9();
 						break;
 					
 					case "10":
-						exercise10();
+						sbRunner.exercise10();
 						break; 
 					
 				/*	case "test":
 						StringBuilder sb = sbTask.createSB("1");
-						//StringBuilder sb = null;
 						String[] strings ={"2","3", "4"};
+						String[] strings2 = {"123","456"};
+						//String delimiter = "--";
+						//StringBuilder sb = null;
 						//String[] strings = null;
 						String delimiter = null;
+						
 						sbTask.addStrings(sb, strings, delimiter);
-						System.out.println(sb);
+						
 						int num = sb.indexOf("null");
-						sb.replace(1,5,delimiter);
-						//String []strings2 = {"123","456"};
 						//int num = sb.lastIndexOf(delimiter);
 						//int num = sbTask.customIndexOf(sb,delimiter,4);
 						//sbTask.insertStrings(sb,strings2,delimiter,2);
@@ -382,7 +411,7 @@ public class SBRunner
 		
 		finally
 		{
-			scanner.close();
+			sbRunner.closeScanner();
 		}
 	}
 }
