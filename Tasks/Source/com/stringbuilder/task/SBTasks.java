@@ -205,7 +205,7 @@ public class SBTasks
 				else
 				{
 					sb.delete(index1,Length);
-				};
+				}
 			}
         }
     }
