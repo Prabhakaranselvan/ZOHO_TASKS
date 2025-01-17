@@ -1,6 +1,4 @@
 package com.inheritance.task;
-import com.helper.UtilsHub;
-import com.exception.InvalidException;
 
 public class Swift extends Car 
 {
@@ -15,11 +13,9 @@ public class Swift extends Car
         return seats;
     }
 
-    public void setSeats(int seats) throws InvalidException
+    public void setSeats(int seats)
 	{
-		UtilsHub.checkZero(seats);
-		UtilsHub.checkNegative(seats);
-        this.seats = seats;
+		this.seats = seats;
     }
 
 // Getter and Setter for airbags
@@ -28,10 +24,9 @@ public class Swift extends Car
         return airbags;
     }
 
-    public void setAirbags(int airbags) throws InvalidException
+    public void setAirbags(int airbags)
 	{
-		UtilsHub.checkNegative(airbags);
-        this.airbags = airbags;
+		this.airbags = airbags;
     }
 
 // Getter and Setter for model
@@ -40,10 +35,9 @@ public class Swift extends Car
         return model;
     }
 
-    public void setModel(String model) throws InvalidException
+    public void setModel(String model)
 	{
-		UtilsHub.checkNull(model);
-        this.model = model;
+		this.model = model;
     }
 
 // Getter and Setter for color
@@ -52,9 +46,8 @@ public class Swift extends Car
         return color;
     }
 
-    public void setColor(String color) throws InvalidException
+    public void setColor(String color)
 	{
-		UtilsHub.checkNull(color);
-        this.color = color;
+		this.color = color;
     }
 }

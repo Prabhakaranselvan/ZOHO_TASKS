@@ -1,11 +1,9 @@
 package com.inheritance.task;
 
-public class Bird 
+public abstract class Bird 
 {
-    abstract public void fly() 
-	{
-    }
-
+    public abstract void fly(); 
+	
     public void speak() 
 	{
         System.out.println("The bird is speaking.");

@@ -1,7 +1,6 @@
 package com.inheritance.inout;
 import java.util.Scanner;
 import com.exception.InvalidException;
-import com.helper.UtilsHub;
 import com.inheritance.task.Car;
 import com.inheritance.task.Swift;
 import com.inheritance.task.SCross;
@@ -206,7 +205,7 @@ public static void main (String[] abc) throws InvalidException
 		boolean isContinue = true;
 		String exercise;
 		InheritanceRunner inheritRunner = new InheritanceRunner();
-		System.out.print("\nTASK : INHERITANCE\n\n2. Calling All Setter and Getter Methods of a Subclass\n3. Calling All Setter and Getter Methods of Subclass & Superclass\n4. Passing Subclass Objects to a Method with Superclass Argument\n5. Identify Subclass Type from a Superclass Reference\n6. Create Method with Swift Argument and Explore Method Calls\n7. Method Overriding\n8. instance of XUV using the default & Overloaded constructor\n9. Subclass inherits the methods of Abstract class\n10. Concrete Method in Subclass for Abstract method in Superclass\n");
+		System.out.print("\nTASK : INHERITANCE\n\n2. Calling All Setter and Getter Methods of a Subclass\n3. Calling All Setter and Getter Methods of Subclass & Superclass\n4. Passing Subclass Objects to a Method with Superclass Argument\n5. Identify Subclass Type from a Superclass Reference\n6. Create Method with Swift Argument and Explore Method Calls\n7. Method Overriding\n8. instance of XUV using the default & Overloaded constructor\n9. Subclass inherits the methods of Abstract class\n10. Concrete Method in Subclass for Abstract method in Superclass\nEnter 0 to Exit\n");
 		try
 		{
 			while(isContinue)

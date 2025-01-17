@@ -1,6 +1,4 @@
 package com.inheritance.task;
-import com.helper.UtilsHub;
-import com.exception.InvalidException;
 
 public class Car 
 {
@@ -25,11 +23,9 @@ public class Car
         return yearOfMake;
     }
 
-    public void setYearOfMake(int yearOfMake) throws InvalidException
+    public void setYearOfMake(int yearOfMake)
 	{
-		UtilsHub.checkZero(yearOfMake);
-		UtilsHub.checkNegative(yearOfMake);
-        this.yearOfMake = yearOfMake;
+		this.yearOfMake = yearOfMake;
     }
 
 // Getter and Setter for engineNumber
@@ -38,10 +34,9 @@ public class Car
         return engineNumber;
     }
 
-    public void setEngineNumber(String engineNumber) throws InvalidException 
+    public void setEngineNumber(String engineNumber)
 	{
-		UtilsHub.checkNull(engineNumber);
-        this.engineNumber = engineNumber;
+		this.engineNumber = engineNumber;
     }
 
     // Getter and Setter for type
@@ -50,10 +45,9 @@ public class Car
         return type;
     }
 
-    public void setType(String type) throws InvalidException
+    public void setType(String type)
 	{
-		UtilsHub.checkNull(type);
-        this.type = type;
+		this.type = type;
     }
 	
 	public void maintenance()
