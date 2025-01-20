@@ -1,7 +1,7 @@
-package com.helper;
+package com.utilshub;
 import com.exception.InvalidException;
 
-public class UtilsHub
+public class UtilsCheck
 {
 
 //Method To Check Whether the String is Null or Empty
@@ -23,20 +23,7 @@ public class UtilsHub
         }
     }
 	
-	//Methods To Get Length
-   	public static int getLength(CharSequence cs) throws InvalidException
-    {
-		checkNull(cs);
-		return cs.length();
-    }
-	
-	public static int getLength(Object[] objectArray) throws InvalidException
-    {
-		checkNull(objectArray);
-		return objectArray.length;
-    }
-	
-	//Method To check Negative Index
+//Method To check Negative Index
 	public static void checkNegative(int input) throws InvalidException
 	{
 		if (input < 0)
@@ -53,6 +40,5 @@ public class UtilsHub
             throw new InvalidException("Input cannot be Zero");
         }
     }
-	
 }
 	
