@@ -1,5 +1,5 @@
 package com.utilshub;
-import java.util.*;
+import java.util.List;
 import com.exception.InvalidException;
 
 public class UtilsSize

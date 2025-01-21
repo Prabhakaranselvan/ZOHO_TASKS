@@ -1,5 +1,6 @@
 package com.utilshub;
 import java.util.Scanner;
+import java.util.InputMismatchException;
 import com.exception.InvalidException;
 
 public class UtilsScan
@@ -17,39 +18,51 @@ public class UtilsScan
 	{	
 		try
 		{ 
-			return Integer.parseInt(getString());
+			return scanner.nextInt();
 		} 
-		catch (NumberFormatException e) 
+		catch (InputMismatchException e) 
 		{
 			throw new InvalidException("Input Mismatch: Expected an integer", e);
-		} 
-	}
-
-//Method to get Double Value	
-	public static double getDouble() throws InvalidException 
-	{
-		try 
+		}
+		finally
 		{
-			return Double.parseDouble(getString());
-		} 
-		catch (NumberFormatException e) 
-		{
-			throw new InvalidException("Input Mismatch: Expected a double value", e);
+			scanner.nextLine();
 		}
 	}
 
-//Method to get long Value	
-	public static long getLong() throws InvalidException 
-	{
-    try 
-	{
-        return Long.parseLong(getString());
-    } 
-	catch (NumberFormatException e) 
-	{
-        throw new InvalidException("Input Mismatch: Expected a long value", e);
-    }
-}
+//Method to get a Double Value
+	public static double getDouble() throws InvalidException
+	{   
+		try
+		{ 
+			return scanner.nextDouble();
+		} 
+		catch (InputMismatchException e) 
+		{
+			throw new InvalidException("Input Mismatch: Expected a double", e);
+		}
+		finally
+		{
+			scanner.nextLine();
+		}
+	}
+
+//Method to get a Long Value
+	public static long getLong() throws InvalidException
+	{   
+		try
+		{ 
+			return scanner.nextLong();
+		} 
+		catch (InputMismatchException e) 
+		{
+			throw new InvalidException("Input Mismatch: Expected a long", e);
+		}
+		finally
+		{
+			scanner.nextLine();
+		}
+	}
 
 
 }

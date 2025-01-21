@@ -1,6 +1,7 @@
 package com.stringbuilder.task;
-import com.helper.UtilsHub;
 import com.exception.InvalidException;
+import com.utilshub.UtilsCheck;
+import com.utilshub.UtilsSize;
 import java.util.Arrays;
 
 public class SBTasks
@@ -20,14 +21,14 @@ public class SBTasks
 	
 	public StringBuilder createSB(String str) throws InvalidException
 	{
-		UtilsHub.checkNull(str);
+		UtilsCheck.checkNull(str);
 		StringBuilder sb = new StringBuilder(str);
 		return sb;
 	}
 	
 	public StringBuilder createSB(CharSequence cs) throws InvalidException
 	{
-		UtilsHub.checkNull(cs);
+		UtilsCheck.checkNull(cs);
 		StringBuilder sb = new StringBuilder(cs);
 		return sb;
 	}
@@ -35,15 +36,15 @@ public class SBTasks
 	//Method for Exercise_1
 	public void addString(StringBuilder sb, String str) throws InvalidException
 	{
-		UtilsHub.checkNull(sb);
+		UtilsCheck.checkNull(sb);
 		sb.append(str);
 	}
 	
 	//Method for Exercise_2
 	public void addStrings(StringBuilder sb, String[] strings, String delimiter) throws InvalidException
 	{
-		UtilsHub.checkNull(sb);
-		int length = UtilsHub.getLength(strings);
+		UtilsCheck.checkNull(sb);
+		int length = UtilsSize.getLength(strings);
         for(int i=0; i<length; i++) 
 		{
 			sb.append(delimiter);
@@ -54,11 +55,11 @@ public class SBTasks
 	//Method for Exercise_3
 	public void insertStrings(StringBuilder sb, String[] strings, String delimiter, int position) throws InvalidException
 	{   
-		UtilsHub.checkNull(sb);
-		int length = UtilsHub.getLength(strings);
-		int delimiterLen = UtilsHub.getLength(delimiter);
-		UtilsHub.checkZero(position);
-		UtilsHub.checkNegative(position);
+		UtilsCheck.checkNull(sb);
+		int length = UtilsSize.getLength(strings);
+		int delimiterLen = UtilsSize.getLength(delimiter);
+		UtilsCheck.checkZero(position);
+		UtilsCheck.checkNegative(position);
 		int insertIndex;
 		if (position == 1)
 		{
@@ -67,7 +68,7 @@ public class SBTasks
 		else
 		{
 			insertIndex = customIndexOf(sb, delimiter, position-1);
-			UtilsHub.checkNegative(insertIndex);
+			UtilsCheck.checkNegative(insertIndex);
 			insertIndex = insertIndex+delimiterLen;
 		}
 		for (int i=length; i>0; i--)
@@ -80,12 +81,12 @@ public class SBTasks
 	//Method for Exercise_4
 	public void deleteStrings(StringBuilder sb, String delimiter, int position) throws InvalidException
 	{
-		int Length = UtilsHub.getLength(sb);
-		int delimiterLen = UtilsHub.getLength(delimiter);
-		UtilsHub.checkZero(position);
-		UtilsHub.checkNegative(position);
+		int Length = UtilsSize.getLength(sb);
+		int delimiterLen = UtilsSize.getLength(delimiter);
+		UtilsCheck.checkZero(position);
+		UtilsCheck.checkNegative(position);
 		int index1 = customIndexOf(sb, delimiter, position-1);
-		UtilsHub.checkNegative(index1);
+		UtilsCheck.checkNegative(index1);
 		int index2 = customIndexOf(sb, delimiter, position);
 		if (position == 1)
 		{
@@ -101,9 +102,9 @@ public class SBTasks
 	//Method for Exercise_5
 	public void replaceDelimiter(StringBuilder sb, String delimiter1, String delimiter2) throws InvalidException
 	{
-		UtilsHub.checkNull(sb);
-		int delimiterLen = UtilsHub.getLength(delimiter1);
-		UtilsHub.checkNull(delimiter2);
+		UtilsCheck.checkNull(sb);
+		int delimiterLen = UtilsSize.getLength(delimiter1);
+		UtilsCheck.checkNull(delimiter2);
 		boolean replace = true;
         while(replace) 
 		{
@@ -122,51 +123,51 @@ public class SBTasks
 	//Method for Exercise_6
 	public void reverseStrings(StringBuilder sb) throws InvalidException
 	{
-		UtilsHub.checkNull(sb);
+		UtilsCheck.checkNull(sb);
 		sb.reverse();
 	}
 	
 	//Method for Exercise_7
 	public void deleteCharacters(StringBuilder sb, int start, int end) throws InvalidException
 	{
-		int length = UtilsHub.getLength(sb);
-		UtilsHub.checkWithinRange(start, end);
-		UtilsHub.checkWithinRange(end, length);
+		int length = UtilsSize.getLength(sb);
+		UtilsCheck.checkWithinRange(start, end);
+		UtilsCheck.checkWithinRange(end, length);
 		sb.delete(start, end);
 	}
 	
 	//Method for Exercise_8
 	public void replaceCharacters(StringBuilder sb, int start, int end, String str) throws InvalidException
 	{
-		int length = UtilsHub.getLength(sb);
-		UtilsHub.checkWithinRange(start, end);
-		UtilsHub.checkWithinRange(end, length);
-		UtilsHub.checkNull(str);
+		int length = UtilsSize.getLength(sb);
+		UtilsCheck.checkWithinRange(start, end);
+		UtilsCheck.checkWithinRange(end, length);
+		UtilsCheck.checkNull(str);
 		sb.replace(start, end, str);
 	}
 	
 	//Method for Exercise_9
 	public int firstIndexOf(StringBuilder sb, String str) throws InvalidException
 	{
-		UtilsHub.checkNull(sb);
-		UtilsHub.checkNull(str);
+		UtilsCheck.checkNull(sb);
+		UtilsCheck.checkNull(str);
 		return sb.indexOf(str);
 	}
 	
 	//Method for Exercise_10
 	public int lastIndexOf(StringBuilder sb, String str) throws InvalidException
 	{
-		UtilsHub.checkNull(sb);
-		UtilsHub.checkNull(str);
+		UtilsCheck.checkNull(sb);
+		UtilsCheck.checkNull(str);
 		return sb.lastIndexOf(str);	
 	}
 	
 	//Method for custom Index position of a String
 	public int customIndexOf(StringBuilder sb, String str, int position) throws InvalidException
 	{
-		UtilsHub.checkNull(sb);
-		UtilsHub.checkNull(str);
-		UtilsHub.checkNegative(position);
+		UtilsCheck.checkNull(sb);
+		UtilsCheck.checkNull(str);
+		UtilsCheck.checkNegative(position);
 		int index = 0;
 		int fromIndex = 0;    
 		for (int i=0; i<position; i++)
@@ -180,9 +181,9 @@ public class SBTasks
 	//Method for Delete Multiple Strings
 	public void deleteStrings(StringBuilder sb, String delimiter, Integer[] stringPosition) throws InvalidException
 	{
-		int Length = UtilsHub.getLength(sb);
-		int delimiterLen = UtilsHub.getLength(delimiter);
-		int numOfStrings = UtilsHub.getLength(stringPosition);
+		int Length = UtilsSize.getLength(sb);
+		int delimiterLen = UtilsSize.getLength(delimiter);
+		int numOfStrings = UtilsSize.getLength(stringPosition);
 		int index1,index2,num,position;
 		Arrays.sort(stringPosition);
         for (int i = 0; i < numOfStrings; i++) 

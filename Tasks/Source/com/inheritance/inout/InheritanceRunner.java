@@ -1,50 +1,23 @@
 package com.inheritance.inout;
-import java.util.Scanner;
 import com.exception.InvalidException;
+import com.utilshub.UtilsScan;
 import com.inheritance.task.*;
 
 public class InheritanceRunner
 {
-	Scanner scanner = new Scanner(System.in);
-	
-	//method to get an Input from user
-	private String getUserInput()
-	{
-			return scanner.nextLine();
-	}
-	
-	//Method to get an Integer
-	private int getInteger() throws InvalidException
-	{	
-		try
-		{ 
-			return Integer.parseInt(getUserInput());
-		} 
-		catch (NumberFormatException e) 
-		{
-			throw new InvalidException("Input Mismatch: Expected an integer", e);
-		} 
-	}
-	
-	//method to close
-	private void closeScanner()
-	{
-			scanner.close();
-	}
-	
 	private void exercise2() throws InvalidException
 	{
 		System.out.println("\nEXERCISE 2 : Calling All Setter and Getter Methods of a Subclass\n");
 		Swift swiftCar = new Swift();
 		
 		System.out.print("Seats: ");
-		swiftCar.setSeats(getInteger());
+		swiftCar.setSeats(UtilsScan.getInteger());
 		System.out.print("Airbags: ");
-		swiftCar.setAirbags(getInteger());
+		swiftCar.setAirbags(UtilsScan.getInteger());
 		System.out.print("Model: ");
-		swiftCar.setModel(getUserInput());
+		swiftCar.setModel(UtilsScan.getString());
 		System.out.print("Color: ");
-		swiftCar.setColor(getUserInput());
+		swiftCar.setColor(UtilsScan.getString());
 
 		System.out.println("\nSwift Details:");
 		System.out.println("Seats: " + swiftCar.getSeats());
@@ -60,19 +33,19 @@ public class InheritanceRunner
 		SCross scrossCar = new SCross();
 		
 		System.out.print("Year of Make: ");
-		scrossCar.setYearOfMake(getInteger());
+		scrossCar.setYearOfMake(UtilsScan.getInteger());
 		System.out.print("Engine Number: ");
-		scrossCar.setEngineNumber(getUserInput());
+		scrossCar.setEngineNumber(UtilsScan.getString());
 		System.out.print("Type: ");
-		scrossCar.setType(getUserInput());
+		scrossCar.setType(UtilsScan.getString());
 		System.out.print("Seats: ");
-		scrossCar.setSeats(getInteger());
+		scrossCar.setSeats(UtilsScan.getInteger());
 		System.out.print("Airbags: ");
-		scrossCar.setAirbags(getInteger());
+		scrossCar.setAirbags(UtilsScan.getInteger());
 		System.out.print("Model: ");
-		scrossCar.setModel(getUserInput());
+		scrossCar.setModel(UtilsScan.getString());
 		System.out.print("Color: ");
-		scrossCar.setColor(getUserInput());
+		scrossCar.setColor(UtilsScan.getString());
 
 		System.out.println("\nSCross Details:");
 		System.out.println("Year of Make: " + scrossCar.getYearOfMake());
@@ -199,72 +172,65 @@ public static void main (String[] abc) throws InvalidException
 		String exercise;
 		InheritanceRunner inheritRunner = new InheritanceRunner();
 		System.out.print("\nTASK : INHERITANCE\n\n2. Calling All Setter and Getter Methods of a Subclass\n3. Calling All Setter and Getter Methods of Subclass & Superclass\n4. Passing Subclass Objects to a Method with Superclass Argument\n5. Identify Subclass Type from a Superclass Reference\n6. Create Method with Swift Argument and Explore Method Calls\n7. Method Overriding\n8. instance of XUV using the default & Overloaded constructor\n9. Subclass inherits the methods of Abstract class\n10. Concrete Method in Subclass for Abstract method in Superclass\nEnter 0 to Exit\n");
-		try
+		
+		while(isContinue)
 		{
-			while(isContinue)
+			try
 			{
-				try
-				{
-					System.out.print("\nEnter the Excercise to carry out : ");
-					exercise = inheritRunner.getUserInput();
-					switch (exercise)
-					{		
-					case "2":
-						inheritRunner.exercise2();
-						break;
+				System.out.print("\nEnter the Excercise to carry out : ");
+				exercise = UtilsScan.getString();
+				switch (exercise)
+				{		
+				case "2":
+					inheritRunner.exercise2();
+					break;
+				
+				case "3":
+					inheritRunner.exercise3();
+					break;
 					
-					case "3":
-						inheritRunner.exercise3();
-						break;
-						
-					case "4":
-						inheritRunner.exercise4();
-						break;
+				case "4":
+					inheritRunner.exercise4();
+					break;
+				
+				case "5":
+					inheritRunner.exercise5();
+					break;
 					
-					case "5":
-						inheritRunner.exercise5();
-						break;
-						
-					case "6":
-						inheritRunner.exercise6();
-						break;
-						
-					case "7":
-						inheritRunner.exercise7();
-						break;
-						
-					case "8":
-						inheritRunner.exercise8();
-						break;
-						
-					case "9":
-						inheritRunner.exercise9();
-						break;
-						
-					case "10":
-						inheritRunner.exercise10();
-						break;
-						
-					case "0":
-						isContinue = false;
-						break;
-						
-					default:
-						System.out.println("Invalid Input");
-						break;
-					}
-				}
-
-				catch (Exception e) 
-				{
-					e.printStackTrace();
+				case "6":
+					inheritRunner.exercise6();
+					break;
+					
+				case "7":
+					inheritRunner.exercise7();
+					break;
+					
+				case "8":
+					inheritRunner.exercise8();
+					break;
+					
+				case "9":
+					inheritRunner.exercise9();
+					break;
+					
+				case "10":
+					inheritRunner.exercise10();
+					break;
+					
+				case "0":
+					isContinue = false;
+					break;
+					
+				default:
+					System.out.println("Invalid Input");
+					break;
 				}
 			}
-		}
-		
-		finally
-		{
-			inheritRunner.closeScanner();
+
+			catch (Exception e) 
+			{
+				e.printStackTrace();
+			}
 		}
 	}
 }

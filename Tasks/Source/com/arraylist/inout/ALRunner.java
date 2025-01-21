@@ -1,7 +1,10 @@
 package com.arraylist.inout;
-import java.util.*;
+import java.util.List;
+import java.util.Iterator;
 import com.exception.InvalidException;
-import com.utilshub.*;
+import com.utilshub.UtilsScan;
+import com.utilshub.UtilsSize;
+import com.utilshub.InputScanner;
 import com.arraylist.task.ALTasks;
 
 public class ALRunner
@@ -12,7 +15,7 @@ public class ALRunner
 	{
 		System.out.println("EXERCISE 1 : Create an ArrayList\n");
 		
-		ArrayList<?> list = alTask.createAL();
+		List<?> list = alTask.createAL();
 		alDetails(list);
 	}
 	
@@ -20,14 +23,14 @@ public class ALRunner
 	{
 		System.out.println("EXERCISE 2 : Create AL and Add Strings\n");
 		
-		ArrayList<String> strings = getAL(String.class);
+		List<String> strings = getAL(String.class);
 	}
 	
 	private void exercise3() throws InvalidException
 	{
 		System.out.println("EXERCISE 3 : Create AL and Add Integer\n");
 		
-		ArrayList<Integer> integers = getAL(Integer.class);
+		List<Integer> integers = getAL(Integer.class);
 	}
 	
 	private void exercise4() throws InvalidException 
@@ -36,7 +39,7 @@ public class ALRunner
 
 		System.out.print("No of Person Objects to add : ");
 		int num = UtilsScan.getInteger();
-		ArrayList<Person> list = alTask.createAL(num);
+		List<Person> list = alTask.createAL(num);
 		
 		addPersonObjToAL(list,num);
 		alDetails(list);
@@ -52,7 +55,7 @@ public class ALRunner
 		int num2 = UtilsScan.getInteger();
 		System.out.print("No of Person Objects to add : ");
 		int num3 = UtilsScan.getInteger();
-		ArrayList<Object> list = alTask.createAL(num1+num2+num3);
+		List<Object> list = alTask.createAL(num1+num2+num3);
 		
 		addStringsToAL(list,num1);
 		addIntegersToAL(list,num2);
@@ -64,7 +67,7 @@ public class ALRunner
 	{
 		System.out.println("EXERCISE 6 : Find Index for Given String\n");
 		
-		ArrayList<String> strings = getAL(String.class);
+		List<String> strings = getAL(String.class);
 		
 		System.out.print("\nEnter the String To Find Its Index : ");
 		String input = UtilsScan.getString();
@@ -75,7 +78,7 @@ public class ALRunner
 	{
 		System.out.println("EXERCISE 7 : Iterator & For Loop Method To Print each Element\n");
 		
-		ArrayList<String> strings = getAL(String.class);
+		List<String> strings = getAL(String.class);
 		
 		System.out.println("\nPrinting elements using iterator():");
 		Iterator<String> iterator = strings.iterator();
@@ -95,7 +98,7 @@ public class ALRunner
 	{
 		System.out.println("EXERCISE 8 : Find String at Given Index\n");
 		
-		ArrayList<String> strings = getAL(String.class);
+		List<String> strings = getAL(String.class);
 		
 		System.out.print("\nEnter Index To Find String: ");
 		int input = UtilsScan.getInteger();
@@ -106,15 +109,20 @@ public class ALRunner
 	{
 		System.out.println("EXERCISE 9 : Find 1st & last Index Of Duplicate Strings\n");
 		
-		ArrayList<String> strings = getAL(String.class);
+		List<String> strings = getAL(String.class);
 		
-		ArrayList<String> duplicates = alTask.findDuplicates(strings);
+		System.out.print("\nEnter The String To find its First and Last: ");
+		String str = UtilsScan.getString();
+		System.out.println("First Index Of " + str + " : " + alTask.getIndex(strings, str));
+		System.out.println("Last Index Of " + str + " : " + alTask.getLastIndex(strings, str));
+		
+		/*List<String> duplicates = alTask.findDuplicates(strings);
 		System.out.println("\nElements with Duplicates : " + duplicates);
 		for (String str : duplicates)
 		{
 			System.out.println("First Index Of " + str + " : " + alTask.getIndex(strings, str));
 			System.out.println("Last Index Of " + str + " : " + alTask.getLastIndex(strings, str));
-		}
+		}*/
 	}
 	
 	
@@ -122,7 +130,7 @@ public class ALRunner
 	{
 		System.out.println("EXERCISE 10 : Add Strings at specified Index\n");
 		
-		ArrayList<String> strings = getAL(String.class);
+		List<String> strings = getAL(String.class);
 		
 		System.out.print("\nEnter the String To Add : ");
 		String str = UtilsScan.getString();
@@ -136,14 +144,14 @@ public class ALRunner
 	{
 		System.out.println("EXERCISE 11 : Create a SubList\n");
 		
-		ArrayList<String> strings = getAL(String.class);
+		List<String> strings = getAL(String.class);
 		
 		System.out.print("\nEnter FromIndex : ");
 		int index1 = UtilsScan.getInteger();
 		System.out.print("Enter ToIndex : ");
 		int index2 = UtilsScan.getInteger();
 		
-		ArrayList<String> subList = alTask.getSubList(strings,index1, index2);
+		List<String> subList = alTask.getSubList(strings,index1, index2);
 		alDetails(subList);
 	}
 	
@@ -152,13 +160,13 @@ public class ALRunner
 		System.out.println("EXERCISE 12 : Merge Two ArrayLists Without Loop\n");
 		
 		System.out.println("ArrayList 1"); 
-		ArrayList<String> strings1 = getAL(String.class);
+		List<String> strings1 = getAL(String.class);
 		
 		System.out.println("\nArrayList 2");
-		ArrayList<String> strings2 = getAL(String.class);
+		List<String> strings2 = getAL(String.class);
 		
 		System.out.print("\nArrayList 3");
-		ArrayList<String> strings3 = alTask.createAL(strings1);
+		List<String> strings3 = alTask.createAL(strings1);
 		alTask.addAllElements(strings3,strings2);
 		
 		alDetails(strings3);
@@ -169,13 +177,13 @@ public class ALRunner
 		System.out.println("EXERCISE 13 : Prepend One ArrayList to Another Without Loop\n");
 		
 		System.out.println("ArrayList 1"); 
-		ArrayList<String> strings1 = getAL(String.class);
+		List<String> strings1 = getAL(String.class);
 		
 		System.out.println("\nArrayList 2");
-		ArrayList<String> strings2 = getAL(String.class);
+		List<String> strings2 = getAL(String.class);
 		
 		System.out.print("\nArrayList 3");
-		ArrayList<String> strings3 = alTask.createAL(strings1);
+		List<String> strings3 = alTask.createAL(strings1);
 		alTask.addAllElementsAtIndex(strings3,strings2,0);
 		
 		alDetails(strings3);
@@ -185,7 +193,7 @@ public class ALRunner
 	{
 		System.out.println("EXERCISE 14 : Remove an Element\n");
 		
-		ArrayList<Double> list = getAL(Double.class);
+		List<Double> list = getAL(Double.class);
 		
 		System.out.print("\nEnter the Index To Remove Element : ");
 		int index = UtilsScan.getInteger();
@@ -198,10 +206,10 @@ public class ALRunner
 		System.out.println("EXERCISE 15 : Remove Commom Elements\n");
 		
 		System.out.println("ArrayList 1"); 
-		ArrayList<String> strings1 = getAL(String.class);
+		List<String> strings1 = getAL(String.class);
 		
 		System.out.println("\nArrayList 2");
-		ArrayList<String> strings2 = getAL(String.class);
+		List<String> strings2 = getAL(String.class);
 		
 		System.out.println("\nAfter Removing Common Elements");
 		alTask.removeAllElements(strings1, strings2);
@@ -213,10 +221,10 @@ public class ALRunner
 		System.out.println("EXERCISE 16 : Retain Commom Elements\n");
 		
 		System.out.println("ArrayList 1"); 
-		ArrayList<String> strings1 = getAL(String.class);
+		List<String> strings1 = getAL(String.class);
 		
 		System.out.println("\nArrayList 2");
-		ArrayList<String> strings2 = getAL(String.class);
+		List<String> strings2 = getAL(String.class);
 		
 		System.out.println("\nAfter Retaining Common Elements");
 		alTask.retainAllElements(strings1, strings2);
@@ -227,7 +235,7 @@ public class ALRunner
 	{
 		System.out.println("EXERCISE 17 : Clear ArrayList\n");
 		
-		ArrayList<Long> strings = getAL(Long.class);
+		List<Long> strings = getAL(Long.class);
 		
 		System.out.println("\nAfter Clearing All Elements");
 		alTask.clearAllElements(strings);
@@ -239,45 +247,59 @@ public class ALRunner
 	{
 		System.out.println("EXERCISE 18 : Check Element in ArrayList\n");
 		
-		ArrayList<String> strings = getAL(String.class);
+		List<String> strings = getAL(String.class);
 		
 		System.out.print("\nEnter the String To Check : ");
 		String input = UtilsScan.getString();
-		System.out.print(input + " present : " + alTask.checkElement(strings, input));
+		System.out.println(input + " present : " + alTask.checkElement(strings, input));
 		
 	}
 	
-	@SuppressWarnings("unchecked")
-	private <T> ArrayList<T> getAL(Class<T> type) throws InvalidException
+	public <T> List<T> getAL(Class<T> type) throws InvalidException 
 	{
-		System.out.print("No Of Elements to add : ");
+		System.out.print("No Of Elements to add: ");
 		int num = UtilsScan.getInteger();
-		ArrayList<T> list = alTask.createAL(num);
-		System.out.println("Enter " + type.getSimpleName() + " values"); 
-		
-		for (int i=1; i<=num; i++)
-			{
-				System.out.print("Element" + i + " : ");
-				T element;
-				try
-				{
-					if (type == String.class) {element = type.cast(UtilsScan.getString());} 
-					else if (type == Integer.class) {element = type.cast(UtilsScan.getInteger());}
-					else if (type == Double.class) {element = type.cast(UtilsScan.getDouble());}
-					else if (type == Long.class) {element = type.cast(UtilsScan.getLong());}
-					else {throw new InvalidException("Unsupported type: " + type.getTypeName());}
-					alTask.addElement(list,element);
-				}	 
-				catch (ClassCastException e) 
-				{
-					throw new InvalidException("Input type does not match the specified ArrayList type", e);
-				}
-			}
+		List<T> list = alTask.createAL(num);
+
+		System.out.println("Enter " + type.getSimpleName() + " values");
+
+		InputScanner<T> inputScanner = getInputScanner(type);
+
+		for (int i = 1; i <= num; i++) 
+		{
+			System.out.print("Element " + i + ": ");
+			T element = inputScanner.scan();
+			alTask.addElement(list,element);
+		}
 		alDetails(list);
 		return list;
 	}
 	
-	private void addStringsToAL(ArrayList<? super String> list, int num) throws InvalidException
+	public <T> InputScanner<T> getInputScanner(Class<T> type) throws InvalidException 
+	{
+        if (type == String.class) 
+		{
+            return () -> type.cast(UtilsScan.getString());
+        } 
+		else if (type == Integer.class) 
+		{
+            return () -> type.cast(UtilsScan.getInteger());
+        } 
+		else if (type == Double.class) 
+		{
+            return () -> type.cast(UtilsScan.getDouble());
+        } 
+		else if (type == Long.class) 
+		{
+            return () -> type.cast(UtilsScan.getLong());
+        } 
+		else 
+		{
+            throw new InvalidException("Unsupported type: " + type.getTypeName());
+        }
+    }
+	
+	private void addStringsToAL(List<? super String> list, int num) throws InvalidException
 	{
 		for (int i=1; i<=num; i++)
 			{
@@ -287,7 +309,7 @@ public class ALRunner
 			}
 	}
 	
-	private <T> void addIntegersToAL(ArrayList<? super Integer> list,int num) throws InvalidException
+	private <T> void addIntegersToAL(List<? super Integer> list,int num) throws InvalidException
 	{
 		for (int i=1; i<=num; i++)
 			{
@@ -297,7 +319,7 @@ public class ALRunner
 			}
 	}
 	
-	private <T> void addPersonObjToAL(ArrayList<? super Person> list,int num) throws InvalidException
+	private <T> void addPersonObjToAL(List<? super Person> list,int num) throws InvalidException
 	{
 		for (int i = 1; i <= num; i++) 
 			{
@@ -308,7 +330,7 @@ public class ALRunner
 			}
 	}
 	
-	private <T> void alDetails(ArrayList<T> list) throws InvalidException
+	private <T> void alDetails(List<T> list) throws InvalidException
 	{
 		System.out.println("ArrayList : " + list);
 		System.out.println("Size of the ArrayList : " + UtilsSize.getSize(list));
@@ -405,9 +427,9 @@ public class ALRunner
 					break;
 				
 			    /*case"t":
-					ArrayList<String> list1 = new ArrayList<>(Arrays.asList("Hello", "World", "Java",null));
+					List<String> list1 = new ArrayList<>(Arrays.asList("Hello", "World", "Java",null));
 					String str = null;
-					ArrayList<String> list2 = null;
+					List<String> list2 = null;
 					int num = list1.indexOf(str);
 					System.out.print(list1.contains(str));
 					list1.removeAll(list2);
@@ -427,3 +449,48 @@ public class ALRunner
 	}
 }
 
+/*	@SuppressWarnings("unchecked")
+	private <T> List<T> getAL(Class<T> type) throws InvalidException
+	{
+		System.out.print("No Of Elements to add : ");
+		int num = UtilsScan.getInteger();
+		List<T> list = alTask.createAL(num);
+		System.out.println("Enter " + type.getSimpleName() + " values"); 
+		
+		for (int i=1; i<=num; i++)
+			{
+				System.out.print("Element" + i + " : ");
+				T element;
+			try
+			{
+				if (type == String.class)
+				{
+					element = type.cast(UtilsScan.getString());
+				} 
+				else if (type == Integer.class) 
+				{
+					element = type.cast(UtilsScan.getInteger());
+				}
+				else if (type == Double.class) 
+				{
+					element = type.cast(UtilsScan.getDouble());
+				}
+				else if (type == Long.class) 
+				{
+					element = type.cast(UtilsScan.getLong());
+				}
+				else 
+				{
+					throw new InvalidException("Unsupported type: " + type.getTypeName());
+				}
+				alTask.addElement(list,element);
+			}	 
+			catch (ClassCastException e) 
+			{
+				throw new InvalidException("Input type does not match the specified ArrayList type", e);
+			}
+			}
+		alDetails(list);
+		return list;
+	} 
+*/
