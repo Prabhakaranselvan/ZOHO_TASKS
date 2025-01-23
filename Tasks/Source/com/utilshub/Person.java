@@ -1,6 +1,6 @@
-package com.arraylist.inout;
+package com.utilshub;
 
-class Person 
+public class Person 
 {
     String name;
     
