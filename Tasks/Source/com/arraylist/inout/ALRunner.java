@@ -5,6 +5,7 @@ import com.exception.InvalidException;
 import com.utilshub.UtilsScan;
 import com.utilshub.UtilsSize;
 import com.utilshub.InputScanner;
+import com.utilshub.Person;
 import com.arraylist.task.ALTasks;
 
 public class ALRunner
@@ -23,14 +24,14 @@ public class ALRunner
 	{
 		System.out.println("EXERCISE 2 : Create AL and Add Strings\n");
 		
-		List<String> strings = getAL(String.class);
+		getAL(String.class);
 	}
 	
 	private void exercise3() throws InvalidException
 	{
 		System.out.println("EXERCISE 3 : Create AL and Add Integer\n");
 		
-		List<Integer> integers = getAL(Integer.class);
+		getAL(Integer.class);
 	}
 	
 	private void exercise4() throws InvalidException 

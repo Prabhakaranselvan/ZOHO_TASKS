@@ -1,5 +1,5 @@
 package com.string.task;
-import com.helper.UtilsHub;
+import com.utilshub.UtilsCheck;
 import com.exception.InvalidException;
 
 public class StringTask 
@@ -8,14 +8,14 @@ public class StringTask
 //Method for Exercise_1
    	public int getLength(String str) throws InvalidException
     {
-		UtilsHub.checkNull(str);
+		UtilsCheck.checkNull(str);
 		return str.length();
     }
 
 //Method for Exercise_2
     public char[] getCharArray(String str) throws InvalidException       
     {
-		UtilsHub.checkNull(str);
+		UtilsCheck.checkNull(str);
        	return str.toCharArray();
     }
 
@@ -23,16 +23,16 @@ public class StringTask
     public char getFromLast(String str, int fromLast) throws InvalidException		
     {
 		int length = getLength(str);
-		UtilsHub.checkZero(length);
-		UtilsHub.checkZero(fromLast);
-		UtilsHub.checkWithinRange(fromLast, length);
+		UtilsCheck.checkZero(length);
+		UtilsCheck.checkZero(fromLast);
+		UtilsCheck.checkWithinRange(fromLast, length);
 		return str.charAt(length - fromLast);
     }
 
 //Method for Exercise_4
 	public int getOccurance(String str, char letter) throws InvalidException		
     {
-		UtilsHub.checkNull(str);
+		UtilsCheck.checkNull(str);
 		int i = 0;
 		int occurance = 0;
 		int length = str.length();
@@ -50,7 +50,7 @@ public class StringTask
 //Method for Exercise_5
 	 public int getGreatestIndex(String str, char letter) throws InvalidException						
     {
-		UtilsHub.checkNull(str);
+		UtilsCheck.checkNull(str);
 		int i = str.lastIndexOf(letter);
 		return (i);
     }
@@ -59,7 +59,7 @@ public class StringTask
 	public String getLastCharacters(String str, int last) throws InvalidException						
 	{
 		int length = getLength(str);
-       	UtilsHub.checkWithinRange(last, length);
+       	UtilsCheck.checkWithinRange(last, length);
 		return str.substring(length - last);
 	}
 
@@ -67,7 +67,7 @@ public class StringTask
 	public String getFirstCharacters(String str, int first) throws InvalidException						
 	{
 		int length = getLength(str);
-       	UtilsHub.checkWithinRange(first, length);
+       	UtilsCheck.checkWithinRange(first, length);
 		return str.substring(0,first);
 	}
 
@@ -75,8 +75,8 @@ public class StringTask
 	public String getStartingReplaced(String str,int noOfChar, String replaceChars) throws InvalidException			
 	{
 		int length = getLength(str);
-       	int replaceCharsLen = getLength(replaceChars);
-		UtilsHub.checkWithinRange(noOfChar, length);
+       	UtilsCheck.checkNull(replaceChars);
+		UtilsCheck.checkWithinRange(noOfChar, length);
 		return str.replaceFirst(str.substring(0,noOfChar), replaceChars);	
 	}
 
@@ -84,38 +84,38 @@ public class StringTask
 	public String getEndingReplaced(String str,int noOfChar, String replaceChars) throws InvalidException					
 	{
 		int length = getLength(str);
-       	int replaceCharsLen = getLength(replaceChars);
-       	UtilsHub.checkWithinRange(noOfChar, length);
+		UtilsCheck.checkNull(replaceChars);
+       	UtilsCheck.checkWithinRange(noOfChar, length);
 		return str.substring(0, length - noOfChar) + replaceChars;
 	}
 
 //Method for Exercise_9
 	public boolean checkStartsWith(String str, String startsWith) throws InvalidException				
 	{
-		UtilsHub.checkNull(str);
-       	UtilsHub.checkNull(startsWith);
+		UtilsCheck.checkNull(str);
+       	UtilsCheck.checkNull(startsWith);
 		return str.startsWith(startsWith);
 	}
 
 //Method for Exercise_10
 	public boolean checkEndsWith(String str, String endsWith)	throws InvalidException	
 	{
-		UtilsHub.checkNull(str);
-       	UtilsHub.checkNull(endsWith);
+		UtilsCheck.checkNull(str);
+       	UtilsCheck.checkNull(endsWith);
 		return str.endsWith(endsWith);
 	}
 
 //Method for Exercise_11	
 	public String changeToLowerCase(String str) throws InvalidException
 	{
-		UtilsHub.checkNull(str);
+		UtilsCheck.checkNull(str);
 		return str.toLowerCase();
 	}
 
 //Method for Exercise_12
 	public String changeToUpperCase(String str)	 throws InvalidException
 	{
-		UtilsHub.checkNull(str);
+		UtilsCheck.checkNull(str);
 		return str.toUpperCase();
 	}
 
@@ -140,51 +140,51 @@ public class StringTask
 //Method for Exercise_14
 	public String getMultipleStringLine(String str) throws InvalidException
 	{
-		UtilsHub.checkNull(str);
+		UtilsCheck.checkNull(str);
 		return str;
 	}
 
 //Method for Exercise_15
 	public String getConcatenatedLine(String str, String concatenateAt, String concatenateWith) throws InvalidException
 	{
-		UtilsHub.checkNull(str);
+		UtilsCheck.checkNull(str);
 		return str.replaceAll(concatenateAt, concatenateWith);
 	}
 
 //Method for Exercise_16
 	public String[] getStringArray(String str, String splitAt) throws InvalidException
 	{
-		UtilsHub.checkNull(str);
+		UtilsCheck.checkNull(str);
 		return str.split(splitAt);
 	}
 
 //Method for Exercise_17
 	public String getMergedStrings(String toJoin,String[] mergedStringArray) throws InvalidException
 	{
-       	UtilsHub.checkNull(mergedStringArray);
+       	UtilsCheck.checkNull(mergedStringArray);
 		return String.join(toJoin,mergedStringArray);
 	}
 
 //Method for Exercise_18
 	public boolean checkEquals(String str1, String str2) throws InvalidException
 	{
-		UtilsHub.checkNull(str1);
-        UtilsHub.checkNull(str2);
+		UtilsCheck.checkNull(str1);
+        UtilsCheck.checkNull(str2);
 		return str1.equals(str2);
 	}
 
 //Method for Exercise_19
 	public boolean checkEqualsIgnoreCase(String str1,String str2) throws InvalidException
 	{
-		UtilsHub.checkNull(str1);
-        UtilsHub.checkNull(str2);
+		UtilsCheck.checkNull(str1);
+        UtilsCheck.checkNull(str2);
 		return str1.equalsIgnoreCase(str2);
 	}
 
 //Method for Exercise_20
 	public String getTrim(String str) throws InvalidException
 	{
-		UtilsHub.checkNull(str);
+		UtilsCheck.checkNull(str);
 		return str.trim();
 	}
 

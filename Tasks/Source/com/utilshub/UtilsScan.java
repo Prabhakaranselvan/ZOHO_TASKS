@@ -2,7 +2,6 @@ package com.utilshub;
 import java.util.Scanner;
 import java.util.InputMismatchException;
 import com.exception.InvalidException;
-import com.utilshub.InputScanner;
 
 public class UtilsScan
 {

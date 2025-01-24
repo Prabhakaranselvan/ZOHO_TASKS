@@ -115,9 +115,9 @@ public class InheritanceRunner
 	{
 		System.out.println("\nEXERCISE 6 : Create Method with Swift Argument and Explore Method Calls\n");
 		Swift swiftCar = new Swift();
-		SCross scrossCar = new SCross();
-		XUV xuvCar = new XUV();
-		Car car = new Swift();
+//		SCross scrossCar = new SCross();
+//		XUV xuvCar = new XUV();
+//		Car car = new Swift();
 		
 		operateSwift(swiftCar);
 		//operateSwift(car);         //error: incompatible types: Car cannot be converted to Swift
@@ -142,7 +142,7 @@ public class InheritanceRunner
 	private void exercise8()
 	{
 		System.out.println("\nEXERCISE 8 :  instance of XUV using the default & Overloaded constructor\n");
-		XUV xuvCar1 = new XUV();
+//		XUV xuvCar1 = new XUV();
 		//XUV xuvCar2 = new XUV("Overloaded"); //: error: constructor XUV in class XUV cannot be applied to given types
 	}
 	
