@@ -29,10 +29,7 @@ public class BPFile
 	public void ensureDirectoryExists(String dirPath) throws InvalidException 
 	{
         File dir = createFile(dirPath);
-        if (!dir.exists()) 
-        {
-            dir.mkdirs();
-        }
+        dir.mkdirs();
     }
 	
 // Method to write lines to a file

@@ -23,10 +23,21 @@ public class BPProperties
 //Method to add Key-Value Pairs
 	public void addKeyValuePair(Properties properties, String key, String value) throws InvalidException
     {
+		UtilsCheck.checkNull(properties);
 		UtilsCheck.checkNull(key);
 		UtilsCheck.checkNull(value);
 		properties.setProperty(key, value);
     }
+	
+//Method to get value for The Key
+	public String getValue(Properties properties, String key) throws InvalidException
+    {
+		UtilsCheck.checkNull(properties);
+		UtilsCheck.checkNull(key);
+		return properties.getProperty(key);
+    }
+		
+	
 	
 // Method to store Properties to a specified file
     public void storeProperties(Properties properties,String dirPath, String fileName, String comments) throws InvalidException, IOException 
@@ -46,10 +57,10 @@ public class BPProperties
 
 
 //Method to load properties from a file
-	public void loadProperties(Properties properties,String dirPath, String fileName) throws InvalidException, IOException 
+	public Properties loadProperties(String dirPath, String fileName) throws InvalidException, IOException 
 	{
-		UtilsCheck.checkNull(properties);
         File file = bpFile.createFile(dirPath,fileName);
+        Properties properties = createProperties();
         try (BufferedReader reader = new BufferedReader(new FileReader(file)))
         {
         
@@ -59,5 +70,6 @@ public class BPProperties
 	    {
 			throw new InvalidException("Error reading from file: ", e);
 	    }
+        return properties;
 	}
 }

@@ -1,5 +1,17 @@
 package com.basicprogramming.inout;
 
+import java.io.IOException;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.time.Instant;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -7,27 +19,20 @@ import java.util.logging.Logger;
 import com.basicprogramming.task.BPDateTime;
 import com.basicprogramming.task.BPFile;
 import com.basicprogramming.task.BPProperties;
-import com.basicprogramming.task.MySingleton;
+import com.basicprogramming.task.BillPughSingleton;
 import com.basicprogramming.task.RainbowColour;
-
-import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
-import java.time.Instant;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatter;
-
 import com.exception.InvalidException;
+import com.utilshub.MessageInfo;
 import com.utilshub.Person;
-import com.utilshub.PojoClass;
 import com.utilshub.UtilsCheck;
+import com.utilshub.UtilsLog;
 import com.utilshub.UtilsScan;
+import com.utilshub.UtilsSize;
 
 public class BPRunner 
 {
-	private static final Logger LOGGER = Logger.getLogger(BPRunner.class.getName());
-
+	private static final Logger LOGGER = UtilsLog.createLogger(BPRunner.class, "Basic Programming");
+	
 	BPFile bpFile = new BPFile();
 	BPProperties bpProperties = new BPProperties();
 			    
@@ -35,14 +40,14 @@ public class BPRunner
 	{
 		LOGGER.info("Ex_1: Create a file and write specified lines\n");
 		bpFile.ensureDirectoryExists(dirPath);
-       
-        LOGGER.info("Enter the number of lines: ");
+        
+        System.out.print("Enter the number of lines: ");
         int noOfLines = UtilsScan.getInteger();
         UtilsCheck.checkNegative(noOfLines);
         String[] lines = new String[noOfLines];
         for (int i = 0; i < noOfLines; i++)
         {
-        	LOGGER.info("Enter line " + (i + 1) + ": ");
+        	 System.out.print("Enter line " + (i + 1) + ": ");
             lines[i] = UtilsScan.getString();
         }
         
@@ -58,19 +63,19 @@ public class BPRunner
         bpFile.ensureDirectoryExists(dirPath);
                 
         Properties properties = bpProperties.createProperties();
-        LOGGER.info("No of Key-Value pairs to Add: ");
+        System.out.print("No of Key-Value pairs to Add: ");
 		int num = UtilsScan.getInteger();
 		UtilsCheck.checkNegative(num);
 		for (int i = 1; i <= num; i++) 
 		{
-			LOGGER.info("Enter key" + i + " : ");
+			 System.out.print("Enter key" + i + " : ");
 			String key = UtilsScan.getString();
-			LOGGER.info("Enter value" + i + " : ");
+			 System.out.print("Enter value" + i + " : ");
 			String value = UtilsScan.getString();
 			bpProperties.addKeyValuePair(properties, key, value);
 		}
 		
-		LOGGER.info("Enter comments: ");
+		 System.out.print("Enter comments: ");
 		String comments = UtilsScan.getString();
 		
 		String fileName = "myprops.txt";
@@ -83,9 +88,8 @@ public class BPRunner
         LOGGER.info("Ex_3: Read keys & values from myprops.txt and store them back into Properties object\n");
         bpFile.ensureDirectoryExists(dirPath);
                 
-        Properties properties = bpProperties.createProperties();
         String fileName = "myprops.txt";
-    	bpProperties.loadProperties(properties, dirPath, fileName);
+        Properties properties = bpProperties.loadProperties(dirPath, fileName);
         LOGGER.info(properties + "\n");
         
     }
@@ -94,7 +98,7 @@ public class BPRunner
     {
         LOGGER.info("Ex_4: Repeat exercises 1, 2, 3 by creating the directory programmatically\n");
         
-        LOGGER.info("Enter the directory path: ");
+        System.out.print("Enter the directory path: ");
 	    String dirPath = UtilsScan.getString(); 		//  /home/prabha-tt0645/INC*/myDir
 	    bpFile.ensureDirectoryExists(dirPath);
         exercise1(dirPath);
@@ -105,7 +109,7 @@ public class BPRunner
     private void exercise5() throws InvalidException 
     {
         LOGGER.info("Ex_5: Create a class with an additional constructor accepting a String and print object\n");
-        LOGGER.info("Creating Person Object. Enter Name: ");
+        System.out.print("Creating Person Object. Enter Name: ");
 		String name = UtilsScan.getString();
         Person person = new Person(name);
         LOGGER.info(person + "\n");
@@ -114,23 +118,23 @@ public class BPRunner
     private void exercise6() throws InvalidException 
     {
         LOGGER.info("Ex_6: Create a POJO class with String & Integer variables and a constructor to initialize them\n");
-        LOGGER.info("Enter Message: ");
+        System.out.print("Enter Message: ");
 		String message = UtilsScan.getString();
-		LOGGER.info("Enter Number: ");
+		 System.out.print("Enter Number: ");
 		int number =UtilsScan.getInteger();
-        PojoClass obj = new PojoClass(message, number);
+        MessageInfo obj = new MessageInfo(message, number);
         LOGGER.info(obj + "\n");
     }
 
     private void exercise7() throws InvalidException 
     {
         LOGGER.info("Ex_7: Create an instance of POJO using default constructor and use setters & getters\n");
-        LOGGER.info("Enter Message: ");
+        System.out.print("Enter Message: ");
 		String message = UtilsScan.getString();
-		LOGGER.info("Enter Number: ");
+		 System.out.print("Enter Number: ");
 		int number = UtilsScan.getInteger();
         
-		PojoClass obj = new PojoClass();
+		MessageInfo obj = new MessageInfo();
         obj.setMessage(message);
         obj.setNumber(number);
         LOGGER.info("Message: " + obj.getMessage() + "\n");
@@ -140,14 +144,8 @@ public class BPRunner
     private void exercise8() throws InvalidException
     {
         LOGGER.info("Ex_8: Create a POJO class with default and overloaded constructors, accessed via reflection\n");
-        try 
-        {
-            PojoRunner.main(null);
-        } 
-        catch (ClassNotFoundException | NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException e) 
-        {
-        	throw new InvalidException("Error occurred while dynamically using POJO class using Reflection", e);
-        }
+        dynamicRunner();
+        
     }
 
     private void exercise9() 
@@ -168,8 +166,8 @@ public class BPRunner
     private void exercise10() 
     {
         LOGGER.info("exercise 10: Implement a Singleton class ensuring a single instance in JVM\n");
-        MySingleton singleton1 = MySingleton.getInstance();  
-        MySingleton singleton2 = MySingleton.getInstance();  
+        BillPughSingleton singleton1 = BillPughSingleton.getInstance();  
+        BillPughSingleton singleton2 = BillPughSingleton.getInstance();  
         if (singleton1 == singleton2) 
         {  
             LOGGER.info("Both objects are the same instance.\n");  
@@ -180,46 +178,137 @@ public class BPRunner
     {
         LOGGER.info("exercise 11: Use java.time package to retrieve various time-related details\n");
         BPDateTime task = new BPDateTime();
-        DateTimeFormatter formatter1 = task.pattern("dd MMM yyyy - HH:mm:ss");
-        DateTimeFormatter formatter2 = task.pattern("dd MMM yyyy - HH:mm:ss - z");
+        DateTimeFormatter formatter = task.pattern("dd MMM yyyy - HH:mm:ss - z");
+        ZoneId zoneId = getZoneID(task);
         
-        LocalDateTime currentDateTime = task.getCurrentDateTime();
-        LOGGER.info("Current Date & Time: " + task.format(currentDateTime, formatter1) + "\n");
+        ZonedDateTime date = task.getZonedDateTime(2003, 2, 23, 0, 0, 0, 0, zoneId);
+        ZonedDateTime date2 = task.getZonedDateTime(2003, 4, 23, 0, 0, 0, 0, zoneId);
+        LOGGER.info("Without DST:"+ task.getZoneOffset(date) + "\n");
+        LOGGER.info("With DST:" + task.getZoneOffset(date2) + "\n");
+//1. Return the currentTime with Date, seconds etc        
+        ZonedDateTime DateTime = task.getCurrentZonedDateTime(zoneId);
+        LOGGER.info("Current Date Time in " + zoneId + ": " + task.format(DateTime, formatter) + "\n");
         
+//2. Return the currentTime in milliseconds
         Instant currentInstant = task.getCurrentInstant();
         long instantMillis = task.toMillis(currentInstant);
         LOGGER.info("Current Time in Milliseconds (Instant): " + instantMillis + "\n");
         
+//2. Return the currentTime in milliseconds using System Class
         LOGGER.info("Current Time in Milliseconds (System): " + task.nowMillis() + "\n");
-           
-        ZoneId newyork = task.zoneId("America/New_York");
-        ZonedDateTime newyorkDateTime = task.getCurrentZonedDateTime(newyork);
-        LOGGER.info("Current Date Time in New York: " + task.format(newyorkDateTime, formatter2) + "\n");
-                
-        ZoneId london = task.zoneId("Europe/London");
-        ZonedDateTime londonDateTime = task.getCurrentZonedDateTime(london);
-        LOGGER.info("Current Date Time in London: " + task.format(londonDateTime, formatter2) + "\n");
-        
+               
+//4. Return the Weekday, Month and Year for the currentTime        
         Instant instant = task.getInstantEpochMilli(instantMillis);
-        ZoneId kolkata = task.zoneId("Asia/Kolkata");   
-        LocalDateTime dateTime = task.getDateTimeFomInstant (instant, kolkata);
+        ZonedDateTime dateTime = task.getZonedDateTimeFomInstant (instant, zoneId);
         LOGGER.info("Current Day of The Week: " + task.getWeekDay(dateTime) + "\n");    
         LOGGER.info("Current Month: " + task.getMonth(dateTime) + "\n");       
         LOGGER.info("Current Year: " + task.getYear(dateTime) + "\n"); 
-        
-        LOGGER.info("Enter time in millis: ");
+ 
+//4. Return the Weekday, Month and Year for the Given Time In Millis
+        System.out.print("Enter time in millis: ");
         long millis = UtilsScan.getLong();
         Instant instant2 = task.getInstantEpochMilli(millis);
-        LocalDateTime dateTime2 = task.getDateTimeFomInstant (instant2, kolkata);		
+        ZonedDateTime dateTime2 = task.getZonedDateTimeFomInstant (instant2, zoneId);		
         LOGGER.info("For Given Millis - Day of The Week: " + task.getWeekDay(dateTime2) + "\n");       
         LOGGER.info("For Given Millis - Month: " + task.getMonth(dateTime2) + "\n");
         LOGGER.info("For Given Millis- Year: " + task.getYear(dateTime2) + "\n");         
+    }
+    
+    private ZoneId getZoneID(BPDateTime task) throws InvalidException
+    {
+    	System.out.print("Want to use System Default ZoneID [Y/N]: ");
+    	String given = UtilsScan.getString();
+    	ZoneId zoneID;
+		if (given.equalsIgnoreCase("Y"))
+    	{
+    		 zoneID = task.defaultZoneId();
+    	}
+    	else if (given.equalsIgnoreCase("N"))
+    	{
+    		System.out.println("Available ZoneIDs:");
+    		List<String> zoneList = new ArrayList<>(ZoneId.getAvailableZoneIds());
+            Collections.sort(zoneList);
+            int size = UtilsSize.getSize(zoneList);
+            int  num = 1;
+            for (String zone : zoneList) 
+            {
+            	System.out.println(num + ". " + zone);
+            	num++;
+            }
+            System.out.print("Enter The Serial No Of Selected ZoneID: ");
+            int selected = UtilsScan.getInteger();
+            UtilsCheck.checkZero(selected);
+            UtilsCheck.checkWithinRange(selected, size);
+            String zone = zoneList.get(selected-1);
+            zoneID = task.zoneId(zone);
+    	}
+    	else
+    	{
+    		throw new InvalidException("InvalidInput");
+    	}
+    	return zoneID;
     }
     
     public  String getWorkingDirectory() 
 	{
 	    return System.getProperty("user.dir");
 	}
+    
+	private void dynamicRunner() throws InvalidException
+	{
+		try
+		{
+			Class<?> pojoClass = Class.forName("com.utilshub.MessageInfo");
+	        
+	        Constructor<?>[] allConstructors = pojoClass.getDeclaredConstructors();
+	        LOGGER.info("Constructors:\n");
+	        for (Constructor<?> constructor : allConstructors) 
+	        {
+	            LOGGER.info(constructor + "\n");
+	        }
+	
+	        Field[] fields = pojoClass.getDeclaredFields();
+	        LOGGER.info("Fields:\n");
+	        for (Field field : fields) 
+	        {
+	            LOGGER.info(field + "\n");
+	        }
+	
+	        Method[] methods = pojoClass.getDeclaredMethods();
+	        LOGGER.info("Methods:\n");
+	        for (Method method : methods) 
+	        {
+	            LOGGER.info(method + "\n");
+	        }
+	            
+// 1. Get and Invoke the Default Constructor
+	        Constructor<?> defaultConstructor = pojoClass.getDeclaredConstructor();
+	        Object pojoInstance1 = defaultConstructor.newInstance();
+	        // pojoInstance1 = pojoClass.getDeclaredConstructor().newInstance();
+	        LOGGER.info(pojoInstance1+ "\n");
+	            
+// 2. Get and Invoke the Overloaded Constructor
+	        Constructor<?> overloadedConstructor = pojoClass.getDeclaredConstructor(String.class, int.class);
+	        Object pojoInstance2 = overloadedConstructor.newInstance("Hello, Reflection!", 42);
+	        // pojoInstance2 = pojoClass.getDeclaredConstructor().newInstance("Hello, Reflection!", 42);
+	        LOGGER.info(pojoInstance2+ "\n");
+	            
+// 3. Get and Invoke a Getter Method (getMessage)
+	        Method getMessageMethod = pojoClass.getMethod("getMessage");
+	        String message = (String)getMessageMethod.invoke(pojoInstance2);
+	        LOGGER.info(message + "\n");
+	
+// 4. Get and Invoke a Setter Method (setMessage)
+	        Method setMessageMethod = pojoClass.getMethod("setMessage", String.class);
+	        setMessageMethod.invoke(pojoInstance2, "Updated via Reflection!");
+	        LOGGER.info("Updated Pojo Instance: " + pojoInstance2 + "\n");
+		} 
+        catch (ClassNotFoundException | NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException e) 
+        {
+        	throw new InvalidException("Error occurred while dynamically using POJO class using Reflection", e);
+        }
+    }
+
 
    public static void main(String[] args) 
     {
@@ -232,7 +321,7 @@ public class BPRunner
         {
         	try
         	{
-        		LOGGER.info("Enter the exercise to carry out : ");
+        		System.out.print("Enter the exercise to carry out : ");
     			exercise = UtilsScan.getString();
     			switch (exercise) 
                 {
@@ -282,9 +371,10 @@ public class BPRunner
                     case "11": 
                     	bp.exercise11(); 
                     	break;
-                                        	
+                                                                               	
                     case "0": 
                     	isContinue = false; 
+                    	LOGGER.info("Terminated.\n");
                     	break;
                     	
                     default: 

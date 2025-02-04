@@ -1,0 +1,306 @@
+Feb 05, 2025 12:49:50 AM com.basicprogramming.inout.BPRunner exercise1
+INFO: Ex_1: Create a file and write specified lines
+
+Feb 05, 2025 12:50:06 AM com.basicprogramming.inout.BPRunner exercise1
+INFO: File created and written successfully
+
+Feb 05, 2025 12:50:12 AM com.basicprogramming.inout.BPRunner exercise2
+INFO: Ex_2: Store values in Properties and save them to myprops.txt
+
+Feb 05, 2025 12:51:00 AM com.basicprogramming.inout.BPRunner exercise2
+INFO: Properties stored successfully
+
+Feb 05, 2025 12:51:25 AM com.basicprogramming.inout.BPRunner exercise3
+INFO: Ex_3: Read keys & values from myprops.txt and store them back into Properties object
+
+Feb 05, 2025 12:51:25 AM com.basicprogramming.inout.BPRunner exercise3
+INFO: {1=qqq, 2=www, 3=eee}
+
+Feb 05, 2025 12:51:27 AM com.basicprogramming.inout.BPRunner exercise4
+INFO: Ex_4: Repeat exercises 1, 2, 3 by creating the directory programmatically
+
+Feb 05, 2025 12:52:05 AM com.basicprogramming.inout.BPRunner exercise1
+INFO: Ex_1: Create a file and write specified lines
+
+Feb 05, 2025 12:52:23 AM com.basicprogramming.inout.BPRunner exercise1
+INFO: File created and written successfully
+
+Feb 05, 2025 12:52:23 AM com.basicprogramming.inout.BPRunner exercise2
+INFO: Ex_2: Store values in Properties and save them to myprops.txt
+
+Feb 05, 2025 12:52:40 AM com.basicprogramming.inout.BPRunner exercise2
+INFO: Properties stored successfully
+
+Feb 05, 2025 12:52:40 AM com.basicprogramming.inout.BPRunner exercise3
+INFO: Ex_3: Read keys & values from myprops.txt and store them back into Properties object
+
+Feb 05, 2025 12:52:40 AM com.basicprogramming.inout.BPRunner exercise3
+INFO: {q=111, w=222}
+
+Feb 05, 2025 12:52:43 AM com.basicprogramming.inout.BPRunner exercise5
+INFO: Ex_5: Create a class with an additional constructor accepting a String and print object
+
+Feb 05, 2025 12:52:54 AM com.basicprogramming.inout.BPRunner exercise5
+INFO: Person{Name:'Prabhakaran'}
+
+Feb 05, 2025 12:52:57 AM com.basicprogramming.inout.BPRunner exercise6
+INFO: Ex_6: Create a POJO class with String & Integer variables and a constructor to initialize them
+
+Feb 05, 2025 12:53:29 AM com.basicprogramming.inout.BPRunner exercise6
+INFO: PojoClass{Message:'First', number:1}
+
+Feb 05, 2025 12:53:36 AM com.basicprogramming.inout.BPRunner exercise7
+INFO: Ex_7: Create an instance of POJO using default constructor and use setters & getters
+
+Feb 05, 2025 12:53:49 AM com.basicprogramming.inout.BPRunner exercise7
+INFO: Message: First
+
+Feb 05, 2025 12:53:49 AM com.basicprogramming.inout.BPRunner exercise7
+INFO: Number: 4
+
+Feb 05, 2025 12:53:53 AM com.basicprogramming.inout.BPRunner exercise8
+INFO: Ex_8: Create a POJO class with default and overloaded constructors, accessed via reflection
+
+Feb 05, 2025 12:53:53 AM com.basicprogramming.inout.BPRunner dynamicRunner
+INFO: Constructors:
+
+Feb 05, 2025 12:53:53 AM com.basicprogramming.inout.BPRunner dynamicRunner
+INFO: public com.utilshub.MessageInfo()
+
+Feb 05, 2025 12:53:53 AM com.basicprogramming.inout.BPRunner dynamicRunner
+INFO: public com.utilshub.MessageInfo(java.lang.String,int)
+
+Feb 05, 2025 12:53:53 AM com.basicprogramming.inout.BPRunner dynamicRunner
+INFO: Fields:
+
+Feb 05, 2025 12:53:53 AM com.basicprogramming.inout.BPRunner dynamicRunner
+INFO: private java.lang.String com.utilshub.MessageInfo.message
+
+Feb 05, 2025 12:53:53 AM com.basicprogramming.inout.BPRunner dynamicRunner
+INFO: private int com.utilshub.MessageInfo.number
+
+Feb 05, 2025 12:53:53 AM com.basicprogramming.inout.BPRunner dynamicRunner
+INFO: Methods:
+
+Feb 05, 2025 12:53:53 AM com.basicprogramming.inout.BPRunner dynamicRunner
+INFO: public java.lang.String com.utilshub.MessageInfo.toString()
+
+Feb 05, 2025 12:53:53 AM com.basicprogramming.inout.BPRunner dynamicRunner
+INFO: public java.lang.String com.utilshub.MessageInfo.getMessage()
+
+Feb 05, 2025 12:53:53 AM com.basicprogramming.inout.BPRunner dynamicRunner
+INFO: public int com.utilshub.MessageInfo.getNumber()
+
+Feb 05, 2025 12:53:53 AM com.basicprogramming.inout.BPRunner dynamicRunner
+INFO: public void com.utilshub.MessageInfo.setMessage(java.lang.String)
+
+Feb 05, 2025 12:53:53 AM com.basicprogramming.inout.BPRunner dynamicRunner
+INFO: public void com.utilshub.MessageInfo.setNumber(int)
+
+Feb 05, 2025 12:53:53 AM com.basicprogramming.inout.BPRunner dynamicRunner
+INFO: PojoClass{Message:'null', number:0}
+
+Feb 05, 2025 12:53:53 AM com.basicprogramming.inout.BPRunner dynamicRunner
+INFO: PojoClass{Message:'Hello, Reflection!', number:42}
+
+Feb 05, 2025 12:53:53 AM com.basicprogramming.inout.BPRunner dynamicRunner
+INFO: Hello, Reflection!
+
+Feb 05, 2025 12:53:53 AM com.basicprogramming.inout.BPRunner dynamicRunner
+INFO: Updated Pojo Instance: PojoClass{Message:'Updated via Reflection!', number:42}
+
+Feb 05, 2025 12:53:56 AM com.basicprogramming.inout.BPRunner exercise9
+INFO: exercise 9: Define an Enum for rainbow colors with values from 1 to 7 and print them
+
+Feb 05, 2025 12:53:56 AM com.basicprogramming.inout.BPRunner exercise9
+INFO: Rainbow Colours and their Colour Codes:
+
+Feb 05, 2025 12:53:56 AM com.basicprogramming.inout.BPRunner exercise9
+INFO: Colour code of VIOLET is 1
+
+Feb 05, 2025 12:53:56 AM com.basicprogramming.inout.BPRunner exercise9
+INFO: Colour code of INDIGO is 2
+
+Feb 05, 2025 12:53:56 AM com.basicprogramming.inout.BPRunner exercise9
+INFO: Colour code of BLUE is 3
+
+Feb 05, 2025 12:53:56 AM com.basicprogramming.inout.BPRunner exercise9
+INFO: Colour code of GREEN is 4
+
+Feb 05, 2025 12:53:56 AM com.basicprogramming.inout.BPRunner exercise9
+INFO: Colour code of YELLOW is 5
+
+Feb 05, 2025 12:53:56 AM com.basicprogramming.inout.BPRunner exercise9
+INFO: Colour code of ORANGE is 6
+
+Feb 05, 2025 12:53:56 AM com.basicprogramming.inout.BPRunner exercise9
+INFO: Colour code of RED is 7
+
+Feb 05, 2025 12:53:56 AM com.basicprogramming.inout.BPRunner exercise9
+INFO: Using ordinal() method:
+
+Feb 05, 2025 12:53:56 AM com.basicprogramming.inout.BPRunner exercise9
+INFO: VIOLET is at position 0
+
+Feb 05, 2025 12:53:56 AM com.basicprogramming.inout.BPRunner exercise9
+INFO: INDIGO is at position 1
+
+Feb 05, 2025 12:53:56 AM com.basicprogramming.inout.BPRunner exercise9
+INFO: BLUE is at position 2
+
+Feb 05, 2025 12:53:56 AM com.basicprogramming.inout.BPRunner exercise9
+INFO: GREEN is at position 3
+
+Feb 05, 2025 12:53:56 AM com.basicprogramming.inout.BPRunner exercise9
+INFO: YELLOW is at position 4
+
+Feb 05, 2025 12:53:56 AM com.basicprogramming.inout.BPRunner exercise9
+INFO: ORANGE is at position 5
+
+Feb 05, 2025 12:53:56 AM com.basicprogramming.inout.BPRunner exercise9
+INFO: RED is at position 6
+
+Feb 05, 2025 12:54:00 AM com.basicprogramming.inout.BPRunner exercise10
+INFO: exercise 10: Implement a Singleton class ensuring a single instance in JVM
+
+Feb 05, 2025 12:54:00 AM com.basicprogramming.inout.BPRunner exercise10
+INFO: Both objects are the same instance.
+
+Feb 05, 2025 12:54:04 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: exercise 11: Use java.time package to retrieve various time-related details
+
+Feb 05, 2025 12:54:10 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: Without DST:+05:30
+
+Feb 05, 2025 12:54:10 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: With DST:+05:30
+
+Feb 05, 2025 12:54:10 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: Current Date Time in Asia/Kolkata: 05 Feb 2025 - 00:54:10 - IST
+
+Feb 05, 2025 12:54:10 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: Current Time in Milliseconds (Instant): 1738697050146
+
+Feb 05, 2025 12:54:10 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: Current Time in Milliseconds (System): 1738697050146
+
+Feb 05, 2025 12:54:10 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: Current Day of The Week: WEDNESDAY
+
+Feb 05, 2025 12:54:10 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: Current Month: FEBRUARY
+
+Feb 05, 2025 12:54:10 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: Current Year: 2025
+
+Feb 05, 2025 12:54:15 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: For Given Millis - Day of The Week: SUNDAY
+
+Feb 05, 2025 12:54:15 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: For Given Millis - Month: MAY
+
+Feb 05, 2025 12:54:15 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: For Given Millis- Year: 1970
+
+Feb 05, 2025 12:54:18 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: exercise 11: Use java.time package to retrieve various time-related details
+
+Feb 05, 2025 12:54:31 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: Without DST:-05:00
+
+Feb 05, 2025 12:54:31 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: With DST:-04:00
+
+Feb 05, 2025 12:54:31 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: Current Date Time in America/New_York: 04 Feb 2025 - 14:24:31 - EST
+
+Feb 05, 2025 12:54:31 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: Current Time in Milliseconds (Instant): 1738697071617
+
+Feb 05, 2025 12:54:31 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: Current Time in Milliseconds (System): 1738697071618
+
+Feb 05, 2025 12:54:31 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: Current Day of The Week: TUESDAY
+
+Feb 05, 2025 12:54:31 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: Current Month: FEBRUARY
+
+Feb 05, 2025 12:54:31 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: Current Year: 2025
+
+Feb 05, 2025 12:54:39 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: For Given Millis - Day of The Week: MONDAY
+
+Feb 05, 2025 12:54:39 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: For Given Millis - Month: OCTOBER
+
+Feb 05, 2025 12:54:39 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: For Given Millis- Year: 5099
+
+Feb 05, 2025 12:55:57 AM com.basicprogramming.inout.BPRunner main
+INFO: Invalid input. Try again.
+
+Feb 05, 2025 12:56:10 AM com.basicprogramming.inout.BPRunner exercise2
+INFO: Ex_2: Store values in Properties and save them to myprops.txt
+
+Feb 05, 2025 12:56:14 AM com.basicprogramming.inout.BPRunner main
+SEVERE: An exception occurred
+com.exception.InvalidException: Input Mismatch: Expected an integer
+	at com.utilshub.UtilsScan.getInteger(UtilsScan.java:25)
+	at com.basicprogramming.inout.BPRunner.exercise2(BPRunner.java:67)
+	at com.basicprogramming.inout.BPRunner.main(BPRunner.java:334)
+Caused by: java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:964)
+	at java.base/java.util.Scanner.next(Scanner.java:1619)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2284)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2238)
+	at com.utilshub.UtilsScan.getInteger(UtilsScan.java:21)
+	... 2 more
+
+Feb 05, 2025 12:58:20 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: exercise 11: Use java.time package to retrieve various time-related details
+
+Feb 05, 2025 12:58:28 AM com.basicprogramming.inout.BPRunner main
+SEVERE: An exception occurred
+java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 603
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:365)
+	at java.base/java.util.ArrayList.get(ArrayList.java:428)
+	at com.basicprogramming.inout.BPRunner.getZoneID(BPRunner.java:241)
+	at com.basicprogramming.inout.BPRunner.exercise11(BPRunner.java:182)
+	at com.basicprogramming.inout.BPRunner.main(BPRunner.java:371)
+
+Feb 05, 2025 1:02:03 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: exercise 11: Use java.time package to retrieve various time-related details
+
+Feb 05, 2025 1:02:23 AM com.basicprogramming.inout.BPRunner main
+SEVERE: An exception occurred
+com.exception.InvalidException: Input cannot be Zero
+	at com.utilshub.UtilsCheck.checkZero(UtilsCheck.java:40)
+	at com.basicprogramming.inout.BPRunner.getZoneID(BPRunner.java:240)
+	at com.basicprogramming.inout.BPRunner.exercise11(BPRunner.java:182)
+	at com.basicprogramming.inout.BPRunner.main(BPRunner.java:372)
+
+Feb 05, 2025 1:02:35 AM com.basicprogramming.inout.BPRunner exercise11
+INFO: exercise 11: Use java.time package to retrieve various time-related details
+
+Feb 05, 2025 1:02:44 AM com.basicprogramming.inout.BPRunner main
+SEVERE: An exception occurred
+com.exception.InvalidException: Input is not within Required Range
+	at com.utilshub.UtilsCheck.checkWithinRange(UtilsCheck.java:22)
+	at com.basicprogramming.inout.BPRunner.getZoneID(BPRunner.java:241)
+	at com.basicprogramming.inout.BPRunner.exercise11(BPRunner.java:182)
+	at com.basicprogramming.inout.BPRunner.main(BPRunner.java:372)
+
+Feb 05, 2025 1:03:57 AM com.basicprogramming.inout.BPRunner exercise5
+INFO: Ex_5: Create a class with an additional constructor accepting a String and print object
+
+Feb 05, 2025 1:04:03 AM com.basicprogramming.inout.BPRunner exercise5
+INFO: Person{Name:'qwe'}
+
+Feb 05, 2025 1:04:13 AM com.basicprogramming.inout.BPRunner main
+INFO: Terminated.
+

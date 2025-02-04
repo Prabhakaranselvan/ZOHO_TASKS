@@ -1,18 +1,18 @@
 package com.utilshub;
 
 
-public class PojoClass 
+public class MessageInfo 
 {
 	private String message;
 	private int number;
 
 // Default Constructor
-    public PojoClass() 
+    public MessageInfo() 
     {
     }
     
 // Constructor that accepts both variables
-	public PojoClass(String message, int number) 	
+	public MessageInfo(String message, int number) 	
 	{
 		this.message = message;	
 		this.number = number;
