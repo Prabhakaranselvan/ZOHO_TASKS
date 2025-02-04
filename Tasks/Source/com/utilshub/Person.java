@@ -2,7 +2,7 @@ package com.utilshub;
 
 public class Person 
 {
-    String name;
+    private String name;
     
 //Constructor
     public Person(String name) 
@@ -10,8 +10,9 @@ public class Person
         this.name = name;
     }
 	
+    @Override
 	public String toString() 
 	{
-        return "Person{name='" + name + "'}";
+        return "Person{Name:'" + name + "'}";
     }
 }

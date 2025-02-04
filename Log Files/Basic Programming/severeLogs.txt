@@ -1,0 +1,42 @@
+Feb 05, 2025 12:56:14 AM com.basicprogramming.inout.BPRunner main
+SEVERE: An exception occurred
+com.exception.InvalidException: Input Mismatch: Expected an integer
+	at com.utilshub.UtilsScan.getInteger(UtilsScan.java:25)
+	at com.basicprogramming.inout.BPRunner.exercise2(BPRunner.java:67)
+	at com.basicprogramming.inout.BPRunner.main(BPRunner.java:334)
+Caused by: java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:964)
+	at java.base/java.util.Scanner.next(Scanner.java:1619)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2284)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2238)
+	at com.utilshub.UtilsScan.getInteger(UtilsScan.java:21)
+	... 2 more
+
+Feb 05, 2025 12:58:28 AM com.basicprogramming.inout.BPRunner main
+SEVERE: An exception occurred
+java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 603
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:365)
+	at java.base/java.util.ArrayList.get(ArrayList.java:428)
+	at com.basicprogramming.inout.BPRunner.getZoneID(BPRunner.java:241)
+	at com.basicprogramming.inout.BPRunner.exercise11(BPRunner.java:182)
+	at com.basicprogramming.inout.BPRunner.main(BPRunner.java:371)
+
+Feb 05, 2025 1:02:23 AM com.basicprogramming.inout.BPRunner main
+SEVERE: An exception occurred
+com.exception.InvalidException: Input cannot be Zero
+	at com.utilshub.UtilsCheck.checkZero(UtilsCheck.java:40)
+	at com.basicprogramming.inout.BPRunner.getZoneID(BPRunner.java:240)
+	at com.basicprogramming.inout.BPRunner.exercise11(BPRunner.java:182)
+	at com.basicprogramming.inout.BPRunner.main(BPRunner.java:372)
+
+Feb 05, 2025 1:02:44 AM com.basicprogramming.inout.BPRunner main
+SEVERE: An exception occurred
+com.exception.InvalidException: Input is not within Required Range
+	at com.utilshub.UtilsCheck.checkWithinRange(UtilsCheck.java:22)
+	at com.basicprogramming.inout.BPRunner.getZoneID(BPRunner.java:241)
+	at com.basicprogramming.inout.BPRunner.exercise11(BPRunner.java:182)
+	at com.basicprogramming.inout.BPRunner.main(BPRunner.java:372)
+

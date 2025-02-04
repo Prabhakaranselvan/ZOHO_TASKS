@@ -1,29 +1,82 @@
 package com.arraylist.task;
 import java.util.List;
-import java.util.ArrayList;
+import java.util.Properties;
+import java.lang.reflect.Constructor;
+//import java.util.ArrayList;
 import java.util.Collection;
+
+import com.basicprogramming.task.BPProperties;
 import com.exception.InvalidException;
 import com.utilshub.UtilsCheck;
 import com.utilshub.UtilsSize;
 
 public class ALTasks
 {
-
-//Method to create an List of a specific type	
-	public <T> List<T> createAL() 
+	
+	
+	private static Class<?> arrayListClass;
+    static 
+    {
+        try 
+        {
+        	BPProperties bpProperties = new BPProperties();
+        	Properties properties = bpProperties.loadProperties("config", "list-config.properties");
+            String className = bpProperties.getValue(properties, "ListImplementation");
+            arrayListClass = Class.forName(className);
+        } 
+        catch (Exception e)
+        {
+        	e.printStackTrace();
+        }
+        
+    }
+    
+//Method to create an List of a specific type
+    @SuppressWarnings("unchecked")
+	public <T> List<T> createAL() throws InvalidException 
 	{
-        return new ArrayList<>();
+		try
+		{
+	         Constructor<?> constructor = arrayListClass.getDeclaredConstructor();
+	         return (List<T>) constructor.newInstance();
+	         //return new ArrayList<>();
+		}
+		catch (Exception e)
+		{
+			throw new InvalidException ("Failed to create ArrayList via Reflection", e);
+		}
     }
 	
+    @SuppressWarnings("unchecked")
 	public <T> List<T> createAL(Collection<T> collection) throws InvalidException
 	{
 		UtilsCheck.checkNull(collection);
-        return new ArrayList<>(collection);
+		try 
+		{
+            Constructor<?> constructor = arrayListClass.getDeclaredConstructor(Collection.class);
+            return (List<T>) constructor.newInstance(collection);
+	        //return new ArrayList<>(collection);
+		}
+		catch (Exception e)
+		{
+			throw new InvalidException ("Failed to create ArrayList via Reflection", e);
+		}
 	}
 	
-    public <T> List<T> createAL(int initialCapacity) 
+    @SuppressWarnings("unchecked")
+    public <T> List<T> createAL(int initialCapacity) throws InvalidException 
 	{
-        return new ArrayList<>(initialCapacity);
+    	try 
+		{
+    		Class<?> arrayListClass = Class.forName("java.util.ArrayList");
+    		Constructor<?> constructor = arrayListClass.getDeclaredConstructor(int.class);
+            return (List<T>) constructor.newInstance(initialCapacity);
+    		//return new ArrayList<>(initialCapacity);
+		}
+		catch (Exception e)
+		{
+			throw new InvalidException ("Failed to create ArrayList via Reflection", e);
+		}
 	}
 
 //Method to Add Elements
