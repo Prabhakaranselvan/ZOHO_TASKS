@@ -41,6 +41,6 @@ public class MessageInfo
 	@Override
 	public String toString() 
 	{
-		return "PojoClass{Message:'" + message + "', number:" + number + "}";
+		return "MessageInfo{Message:'" + message + "', number:" + number + "}";
 	}
 }

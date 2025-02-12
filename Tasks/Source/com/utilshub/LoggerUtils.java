@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 import com.exception.InvalidException;
 
-public class UtilsLog 
+public class LoggerUtils 
 {	
 	public static Logger createLogger(Class<?> clazz, String subFolder)
 	{
@@ -29,17 +29,17 @@ public class UtilsLog
 	        
 		try
 		{
-			FileHandler infoHandler = new FileHandler("Log Files/Basic Programming/infoLogs.txt", true);
+			FileHandler infoHandler = new FileHandler(logDir + "/infoLogs.txt", true);
 	        infoHandler.setLevel(Level.INFO);
 	        infoHandler.setFormatter(new SimpleFormatter());
 	        infoHandler.setFilter(record -> record.getLevel() == Level.INFO);
 
-	        FileHandler severeHandler = new FileHandler("Log Files/Basic Programming/severeLogs.txt", true);
+	        FileHandler severeHandler = new FileHandler(logDir + "/severeLogs.txt", true);
 	        severeHandler.setLevel(Level.SEVERE);
 	        severeHandler.setFormatter(new SimpleFormatter());
 	        
-	        FileHandler totalHandler = new FileHandler("Log Files/Basic Programming/totalLogs.txt", true);
-	        totalHandler.setLevel(Level.FINEST);
+	        FileHandler totalHandler = new FileHandler(logDir + "/totalLogs.txt", true);
+	        totalHandler.setLevel(Level.ALL);
 	        totalHandler.setFormatter(new SimpleFormatter());
 	        
 	        logger.addHandler(infoHandler);
@@ -53,8 +53,7 @@ public class UtilsLog
 		{
 			e.printStackTrace();
 		}
-		return logger;
-		
+		return logger;	
 	}
 
 }
