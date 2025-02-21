@@ -5,6 +5,7 @@ import java.lang.management.ThreadInfo;
 import java.lang.management.ThreadMXBean;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -127,6 +128,47 @@ public class ThreadRunner
         }
 	}
 	
+	
+	private void captureThreadDumpUsingThreadGroup() 
+	{
+	    ThreadGroup group = Thread.currentThread().getThreadGroup();
+	    int threadCount = group.activeCount();
+	    Thread[] threads = new Thread[threadCount];
+	    group.enumerate(threads);
+
+	    LOGGER.info("Thread Dump (ThreadGroup)");
+	    for (Thread thread : threads) 
+	    {
+	        if (thread != null) 
+	        {
+	            LOGGER.info("Thread_Name(" + thread.getName() + ") ; Priority(" + thread.getPriority() + ") ; State(" + thread.getState() + ")\n");
+	            
+	            StackTraceElement[] stackTrace = thread.getStackTrace();
+	            for (StackTraceElement element : stackTrace) 
+	            {
+	                LOGGER.info(element.toString());
+	            }
+	        }
+	    }
+	}
+
+
+    private void captureThreadDumpUsingAllStackTraces() 
+    {
+        Map<Thread, StackTraceElement[]> allStackTraces = Thread.getAllStackTraces();
+        
+        LOGGER.info("Thread Dump (All Stack Traces)");
+        for (Map.Entry<Thread, StackTraceElement[]> entry : allStackTraces.entrySet()) 
+        {
+            Thread thread = entry.getKey();
+            LOGGER.info("Thread Name: " + thread.getName() + " | State: " + thread.getState());
+            for (StackTraceElement element : entry.getValue()) 
+            {
+                LOGGER.info(element.toString());
+            }
+        }
+    }
+	
 	private void exercise6() throws InvalidException, InterruptedException
 	{
 		LOGGER.info("Exercise 6 : Implementing a Controlled Execution Loop with Thread Dumps\n");
@@ -149,30 +191,24 @@ public class ThreadRunner
             thread.start();
         }
 		
-		try 
-		{
-            Thread.sleep(120000);
+        Thread.sleep(120000);
 
-            for (int i = 1; i <= 3; i++) 
-            {
-                LOGGER.info("\nTaking Thread Dump " + i + " at " + (i * 30) + " seconds\n");
-                captureThreadDump();
-                Thread.sleep(30000);
-            }
+        for (int i = 1; i <= 3; i++) 
+        {
+            LOGGER.info("\nTaking Thread Dump " + i + " at " + (i * 30) + " seconds\n");
+            captureThreadDump();
+            captureThreadDumpUsingThreadGroup();
+            captureThreadDumpUsingAllStackTraces() ;
+            Thread.sleep(30000);
+        }
 
-            for (ExtendedThread thread : extendedThreads) 
-            {
-                thread.stopThread();
-            }
-            for (RunnableThread thread : runnableThreads) 
-            {
-                thread.stopThread();
-            }
-
-        } 
-		catch (InterruptedException e) 
-		{
-			LOGGER.log(Level.SEVERE,"ThreadRunner interrupted.\n" , e);
+        for (ExtendedThread thread : extendedThreads) 
+        {
+            thread.stopThread();
+        }
+        for (RunnableThread thread : runnableThreads) 
+        {
+            thread.stopThread();
         }
     }
 	
