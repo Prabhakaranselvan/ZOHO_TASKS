@@ -298,3 +298,12 @@ com.exception.InvalidException: Input is not within Required Range
 Feb 10, 2025 1:21:51 PM com.basicprogramming.inout.BPRunner main
 INFO: Terminated.
 
+Mar 10, 2025 12:01:06 PM com.basicprogramming.inout.BPRunner exercise2
+INFO: Ex_2: Store values in Properties and save them to myprops.txt
+
+Mar 10, 2025 12:02:40 PM com.basicprogramming.inout.BPRunner exercise2
+INFO: Properties stored successfully
+
+Mar 10, 2025 12:02:46 PM com.basicprogramming.inout.BPRunner main
+INFO: Terminated.
+

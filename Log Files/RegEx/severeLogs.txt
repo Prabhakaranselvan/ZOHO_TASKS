@@ -1,0 +1,36 @@
+Mar 11, 2025 8:08:09 AM com.regex.inout.RegExRunner main
+SEVERE: An exception occurred
+com.exception.InvalidException: Input Mismatch: Expected an integer
+	at com.utilshub.UtilsScan.getInteger(UtilsScan.java:25)
+	at com.regex.inout.RegExRunner.getList(RegExRunner.java:162)
+	at com.regex.inout.RegExRunner.exercise6(RegExRunner.java:120)
+	at com.regex.inout.RegExRunner.main(RegExRunner.java:230)
+Caused by: java.util.InputMismatchException
+	at java.util.Scanner.throwFor(Scanner.java:864)
+	at java.util.Scanner.next(Scanner.java:1485)
+	at java.util.Scanner.nextInt(Scanner.java:2117)
+	at java.util.Scanner.nextInt(Scanner.java:2076)
+	at com.utilshub.UtilsScan.getInteger(UtilsScan.java:21)
+	... 3 more
+
+Mar 11, 2025 8:12:15 AM com.regex.inout.RegExRunner main
+SEVERE: An exception occurred
+java.util.NoSuchElementException: No line found
+	at java.util.Scanner.nextLine(Scanner.java:1540)
+	at com.utilshub.UtilsScan.getString(UtilsScan.java:13)
+	at com.regex.inout.RegExRunner.main(RegExRunner.java:194)
+
+Mar 11, 2025 8:12:15 AM com.regex.inout.RegExRunner main
+SEVERE: An exception occurred
+java.util.NoSuchElementException: No line found
+	at java.util.Scanner.nextLine(Scanner.java:1540)
+	at com.utilshub.UtilsScan.getString(UtilsScan.java:13)
+	at com.regex.inout.RegExRunner.main(RegExRunner.java:194)
+
+Mar 11, 2025 8:12:15 AM com.regex.inout.RegExRunner main
+SEVERE: An exception occurred
+java.util.NoSuchElementException: No line found
+	at java.util.Scanner.nextLine(Scanner.java:1540)
+	at com.utilshub.UtilsScan.getString(UtilsScan.java:13)
+	at com.regex.inout.RegExRunner.main(RegExRunner.java:194)
+
