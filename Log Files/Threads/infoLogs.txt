@@ -1,0 +1,2519 @@
+Feb 12, 2025 2:28:31 PM com.thread.inout.ThreadRunner exercise6
+INFO: Exercise 6 : Implementing a Controlled Execution Loop with Thread Dumps
+
+Feb 12, 2025 2:28:31 PM com.thread.task.ExtendedThread run
+INFO: Thread_Name(ExtendedThread - 0) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 2:28:31 PM com.thread.task.ExtendedThread run
+INFO: Thread_Name(ExtendedThread - 4) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 2:28:31 PM com.thread.task.ExtendedThread run
+INFO: Thread_Name(ExtendedThread - 3) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 2:28:31 PM com.thread.task.ExtendedThread run
+INFO: Thread_Name(ExtendedThread - 1) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 2:28:31 PM com.thread.task.ExtendedThread run
+INFO: Thread_Name(ExtendedThread - 2) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 2:28:31 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 1 for 70000 ms
+
+Feb 12, 2025 2:28:31 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 3 for 90000 ms
+
+Feb 12, 2025 2:28:31 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 4 for 100000 ms
+
+Feb 12, 2025 2:28:31 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 0 for 60000 ms
+
+Feb 12, 2025 2:28:31 PM com.thread.task.RunnableThread run
+INFO: Thread_Name(RunnableThread - 4) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 2:28:31 PM com.thread.task.RunnableThread run
+INFO: Thread_Name(RunnableThread - 3) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 2:28:31 PM com.thread.task.RunnableThread run
+INFO: Thread_Name(RunnableThread - 2) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 2:28:31 PM com.thread.task.RunnableThread run
+INFO: Thread_Name(RunnableThread - 1) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 2:28:31 PM com.thread.task.RunnableThread run
+INFO: Thread_Name(RunnableThread - 0) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 2:28:31 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 1 for 50000 ms
+
+Feb 12, 2025 2:28:31 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 2 for 55000 ms
+
+Feb 12, 2025 2:28:31 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 3 for 60000 ms
+
+Feb 12, 2025 2:28:31 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 4 for 65000 ms
+
+Feb 12, 2025 2:28:31 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 2 for 80000 ms
+
+Feb 12, 2025 2:28:31 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 0 for 45000 ms
+
+Feb 12, 2025 2:29:16 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 0
+
+Feb 12, 2025 2:29:16 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 0 for 45000 ms
+
+Feb 12, 2025 2:29:21 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 1
+
+Feb 12, 2025 2:29:21 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 1 for 50000 ms
+
+Feb 12, 2025 2:29:26 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 2
+
+Feb 12, 2025 2:29:26 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 2 for 55000 ms
+
+Feb 12, 2025 2:29:31 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 0
+
+Feb 12, 2025 2:29:31 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 0 for 60000 ms
+
+Feb 12, 2025 2:29:31 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 3
+
+Feb 12, 2025 2:29:31 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 3 for 60000 ms
+
+Feb 12, 2025 2:29:36 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 4
+
+Feb 12, 2025 2:29:36 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 4 for 65000 ms
+
+Feb 12, 2025 2:29:41 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 1
+
+Feb 12, 2025 2:29:41 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 1 for 70000 ms
+
+Feb 12, 2025 2:29:51 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 2
+
+Feb 12, 2025 2:29:51 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 2 for 80000 ms
+
+Feb 12, 2025 2:30:01 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 3
+
+Feb 12, 2025 2:30:01 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 3 for 90000 ms
+
+Feb 12, 2025 2:30:01 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 0
+
+Feb 12, 2025 2:30:01 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 0 for 45000 ms
+
+Feb 12, 2025 2:30:11 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 4
+
+Feb 12, 2025 2:30:11 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 4 for 100000 ms
+
+Feb 12, 2025 2:30:11 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 1
+
+Feb 12, 2025 2:30:11 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 1 for 50000 ms
+
+Feb 12, 2025 2:30:21 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 2
+
+Feb 12, 2025 2:30:21 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 2 for 55000 ms
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner exercise6
+INFO: 
+Taking Thread Dump 1 at 30 seconds
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 4" Id=28 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 3" Id=27 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 2" Id=26 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 1" Id=25 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 0" Id=24 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 4" Id=23 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 3" Id=22 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 2:30:31 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 0
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 2" Id=21 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 2:30:31 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 0 for 60000 ms
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 1" Id=20 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 0" Id=19 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "Signal Dispatcher" Id=4 RUNNABLE
+
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@3b9a45b3
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@3b9a45b3
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)
+
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@7699a589
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@7699a589
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "main" Id=1 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:454)
+	at com.thread.inout.ThreadRunner.captureThreadDump(ThreadRunner.java:123)
+	at com.thread.inout.ThreadRunner.exercise6(ThreadRunner.java:199)
+	at com.thread.inout.ThreadRunner.main(ThreadRunner.java:336)
+
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread Dump (ThreadGroup)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(main) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.getStackTrace(Thread.java:1559)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.inout.ThreadRunner.captureThreadDumpUsingThreadGroup(ThreadRunner.java:146)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.inout.ThreadRunner.exercise6(ThreadRunner.java:200)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.inout.ThreadRunner.main(ThreadRunner.java:336)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 0) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 1) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 2) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 3) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 4) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 0) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 1) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 2) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 3) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:30:31 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 3
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.io.FileOutputStream.writeBytes(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 3 for 60000 ms
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.io.FileOutputStream.write(FileOutputStream.java:326)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.util.logging.FileHandler$MeteredStream.flush(FileHandler.java:214)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:297)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.util.logging.StreamHandler.flush(StreamHandler.java:259)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.util.logging.FileHandler.publish(FileHandler.java:702)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.util.logging.Logger.log(Logger.java:738)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.util.logging.Logger.doLog(Logger.java:765)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.util.logging.Logger.log(Logger.java:788)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.util.logging.Logger.info(Logger.java:1490)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:47)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 4) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Dump (All Stack Traces)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 0 | State: TIMED_WAITING
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: Reference Handler | State: WAITING
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Object.wait(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Object.wait(Object.java:502)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: Finalizer | State: WAITING
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Object.wait(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 1 | State: TIMED_WAITING
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: main | State: RUNNABLE
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.dumpThreads(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.getAllStackTraces(Thread.java:1610)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.inout.ThreadRunner.captureThreadDumpUsingAllStackTraces(ThreadRunner.java:158)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.inout.ThreadRunner.exercise6(ThreadRunner.java:201)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.inout.ThreadRunner.main(ThreadRunner.java:336)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 3 | State: TIMED_WAITING
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 2 | State: TIMED_WAITING
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 2 | State: TIMED_WAITING
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 0 | State: TIMED_WAITING
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 4 | State: TIMED_WAITING
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: Signal Dispatcher | State: RUNNABLE
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 3 | State: TIMED_WAITING
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 4 | State: TIMED_WAITING
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 1 | State: TIMED_WAITING
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:30:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:30:41 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 4
+
+Feb 12, 2025 2:30:41 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 4 for 65000 ms
+
+Feb 12, 2025 2:30:46 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 0
+
+Feb 12, 2025 2:30:46 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 0 for 45000 ms
+
+Feb 12, 2025 2:30:51 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 1
+
+Feb 12, 2025 2:30:51 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 1 for 70000 ms
+
+Feb 12, 2025 2:31:01 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 1
+
+Feb 12, 2025 2:31:01 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 1 for 50000 ms
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner exercise6
+INFO: 
+Taking Thread Dump 2 at 60 seconds
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 4" Id=28 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 3" Id=27 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 2" Id=26 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 1" Id=25 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 0" Id=24 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 4" Id=23 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 3" Id=22 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 2" Id=21 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 1" Id=20 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 0" Id=19 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "Signal Dispatcher" Id=4 RUNNABLE
+
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@3b9a45b3
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@3b9a45b3
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)
+
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@7699a589
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@7699a589
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "main" Id=1 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:454)
+	at com.thread.inout.ThreadRunner.captureThreadDump(ThreadRunner.java:123)
+	at com.thread.inout.ThreadRunner.exercise6(ThreadRunner.java:199)
+	at com.thread.inout.ThreadRunner.main(ThreadRunner.java:336)
+
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread Dump (ThreadGroup)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(main) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.getStackTrace(Thread.java:1559)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.inout.ThreadRunner.captureThreadDumpUsingThreadGroup(ThreadRunner.java:146)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.inout.ThreadRunner.exercise6(ThreadRunner.java:200)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.inout.ThreadRunner.main(ThreadRunner.java:336)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 0) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 1) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 2) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 3) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 4) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 0) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 1) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 2) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 3) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 4) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Dump (All Stack Traces)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 0 | State: TIMED_WAITING
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: Reference Handler | State: WAITING
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Object.wait(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Object.wait(Object.java:502)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: Finalizer | State: WAITING
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Object.wait(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 1 | State: TIMED_WAITING
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: main | State: RUNNABLE
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.dumpThreads(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.getAllStackTraces(Thread.java:1610)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.inout.ThreadRunner.captureThreadDumpUsingAllStackTraces(ThreadRunner.java:158)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.inout.ThreadRunner.exercise6(ThreadRunner.java:201)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.inout.ThreadRunner.main(ThreadRunner.java:336)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 3 | State: TIMED_WAITING
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 2 | State: TIMED_WAITING
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 2 | State: TIMED_WAITING
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 0 | State: TIMED_WAITING
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 4 | State: TIMED_WAITING
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: Signal Dispatcher | State: RUNNABLE
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 3 | State: TIMED_WAITING
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 4 | State: TIMED_WAITING
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 1 | State: TIMED_WAITING
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:31:01 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:31:11 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 2
+
+Feb 12, 2025 2:31:11 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 2 for 80000 ms
+
+Feb 12, 2025 2:31:16 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 2
+
+Feb 12, 2025 2:31:16 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 2 for 55000 ms
+
+Feb 12, 2025 2:31:31 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 3
+
+Feb 12, 2025 2:31:31 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 0
+
+Feb 12, 2025 2:31:31 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 3 for 90000 ms
+
+Feb 12, 2025 2:31:31 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 0 for 60000 ms
+
+Feb 12, 2025 2:31:31 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 3
+
+Feb 12, 2025 2:31:31 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 3 for 60000 ms
+
+Feb 12, 2025 2:31:31 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 0
+
+Feb 12, 2025 2:31:31 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 0 for 45000 ms
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner exercise6
+INFO: 
+Taking Thread Dump 3 at 90 seconds
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 4" Id=28 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 3" Id=27 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 2" Id=26 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 1" Id=25 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 0" Id=24 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 4" Id=23 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 3" Id=22 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 2" Id=21 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 1" Id=20 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 0" Id=19 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "Signal Dispatcher" Id=4 RUNNABLE
+
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@3b9a45b3
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@3b9a45b3
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)
+
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@7699a589
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@7699a589
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "main" Id=1 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:454)
+	at com.thread.inout.ThreadRunner.captureThreadDump(ThreadRunner.java:123)
+	at com.thread.inout.ThreadRunner.exercise6(ThreadRunner.java:199)
+	at com.thread.inout.ThreadRunner.main(ThreadRunner.java:336)
+
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread Dump (ThreadGroup)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(main) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.getStackTrace(Thread.java:1559)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.inout.ThreadRunner.captureThreadDumpUsingThreadGroup(ThreadRunner.java:146)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.inout.ThreadRunner.exercise6(ThreadRunner.java:200)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.inout.ThreadRunner.main(ThreadRunner.java:336)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 0) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 1) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 2) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 3) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 4) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 0) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 1) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 2) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 3) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 4) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Dump (All Stack Traces)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 0 | State: TIMED_WAITING
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: Reference Handler | State: WAITING
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Object.wait(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Object.wait(Object.java:502)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: Finalizer | State: WAITING
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Object.wait(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 1 | State: TIMED_WAITING
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: main | State: RUNNABLE
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.dumpThreads(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.getAllStackTraces(Thread.java:1610)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.inout.ThreadRunner.captureThreadDumpUsingAllStackTraces(ThreadRunner.java:158)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.inout.ThreadRunner.exercise6(ThreadRunner.java:201)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.inout.ThreadRunner.main(ThreadRunner.java:336)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 3 | State: TIMED_WAITING
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 2 | State: TIMED_WAITING
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 2 | State: TIMED_WAITING
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 0 | State: TIMED_WAITING
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 4 | State: TIMED_WAITING
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: Signal Dispatcher | State: RUNNABLE
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 3 | State: TIMED_WAITING
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 4 | State: TIMED_WAITING
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 1 | State: TIMED_WAITING
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 2:31:31 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 2:31:46 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 4
+
+Feb 12, 2025 2:31:46 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 4 for 65000 ms
+
+Feb 12, 2025 2:31:51 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 4
+
+Feb 12, 2025 2:31:51 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 4 for 100000 ms
+
+Feb 12, 2025 2:31:51 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 1
+
+Feb 12, 2025 2:31:51 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 1 for 50000 ms
+
+Feb 12, 2025 2:32:01 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 1
+
+Feb 12, 2025 2:32:01 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 1 for 70000 ms
+
+Feb 12, 2025 2:32:11 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 2
+
+Feb 12, 2025 2:32:11 PM com.thread.task.RunnableThread run
+INFO: RunnableThread - 2 Stopped...
+
+Feb 12, 2025 2:32:16 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 0
+
+Feb 12, 2025 2:32:16 PM com.thread.task.RunnableThread run
+INFO: RunnableThread - 0 Stopped...
+
+Feb 12, 2025 2:32:31 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 0
+
+Feb 12, 2025 2:32:31 PM com.thread.task.ExtendedThread run
+INFO: ExtendedThread - 0 Stopped...
+
+Feb 12, 2025 2:32:31 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 3
+
+Feb 12, 2025 2:32:31 PM com.thread.task.RunnableThread run
+INFO: RunnableThread - 3 Stopped...
+
+Feb 12, 2025 2:32:31 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 2
+
+Feb 12, 2025 2:32:31 PM com.thread.task.ExtendedThread run
+INFO: ExtendedThread - 2 Stopped...
+
+Feb 12, 2025 2:32:41 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 1
+
+Feb 12, 2025 2:32:41 PM com.thread.task.RunnableThread run
+INFO: RunnableThread - 1 Stopped...
+
+Feb 12, 2025 2:32:51 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 4
+
+Feb 12, 2025 2:32:51 PM com.thread.task.RunnableThread run
+INFO: RunnableThread - 4 Stopped...
+
+Feb 12, 2025 2:33:01 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 3
+
+Feb 12, 2025 2:33:01 PM com.thread.task.ExtendedThread run
+INFO: ExtendedThread - 3 Stopped...
+
+Feb 12, 2025 2:33:11 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 1
+
+Feb 12, 2025 2:33:11 PM com.thread.task.ExtendedThread run
+INFO: ExtendedThread - 1 Stopped...
+
+Feb 12, 2025 2:33:31 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 4
+
+Feb 12, 2025 2:33:31 PM com.thread.task.ExtendedThread run
+INFO: ExtendedThread - 4 Stopped...
+
+Feb 12, 2025 3:05:37 PM com.thread.inout.ThreadRunner exercise6
+INFO: Exercise 6 : Implementing a Controlled Execution Loop with Thread Dumps
+
+Feb 12, 2025 3:05:37 PM com.thread.task.ExtendedThread run
+INFO: Thread_Name(ExtendedThread - 0) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:05:37 PM com.thread.task.ExtendedThread run
+INFO: Thread_Name(ExtendedThread - 1) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:05:37 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 0 for 60000 ms
+
+Feb 12, 2025 3:05:37 PM com.thread.task.ExtendedThread run
+INFO: Thread_Name(ExtendedThread - 2) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:05:37 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 1 for 70000 ms
+
+Feb 12, 2025 3:05:37 PM com.thread.task.ExtendedThread run
+INFO: Thread_Name(ExtendedThread - 4) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:05:37 PM com.thread.task.RunnableThread run
+INFO: Thread_Name(RunnableThread - 1) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:05:37 PM com.thread.task.RunnableThread run
+INFO: Thread_Name(RunnableThread - 2) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:05:37 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 2 for 80000 ms
+
+Feb 12, 2025 3:05:37 PM com.thread.task.ExtendedThread run
+INFO: Thread_Name(ExtendedThread - 3) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:05:37 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 2 for 55000 ms
+
+Feb 12, 2025 3:05:37 PM com.thread.task.RunnableThread run
+INFO: Thread_Name(RunnableThread - 4) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:05:37 PM com.thread.task.RunnableThread run
+INFO: Thread_Name(RunnableThread - 3) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:05:37 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 1 for 50000 ms
+
+Feb 12, 2025 3:05:37 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 4 for 100000 ms
+
+Feb 12, 2025 3:05:37 PM com.thread.task.RunnableThread run
+INFO: Thread_Name(RunnableThread - 0) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:05:37 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 3 for 60000 ms
+
+Feb 12, 2025 3:05:37 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 4 for 65000 ms
+
+Feb 12, 2025 3:05:37 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 3 for 90000 ms
+
+Feb 12, 2025 3:05:37 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 0 for 45000 ms
+
+Feb 12, 2025 3:06:22 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 0
+
+Feb 12, 2025 3:06:22 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 0 for 45000 ms
+
+Feb 12, 2025 3:06:27 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 1
+
+Feb 12, 2025 3:06:27 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 1 for 50000 ms
+
+Feb 12, 2025 3:06:32 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 2
+
+Feb 12, 2025 3:06:32 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 2 for 55000 ms
+
+Feb 12, 2025 3:06:37 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 0
+
+Feb 12, 2025 3:06:37 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 0 for 60000 ms
+
+Feb 12, 2025 3:06:37 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 3
+
+Feb 12, 2025 3:06:37 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 3 for 60000 ms
+
+Feb 12, 2025 3:06:42 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 4
+
+Feb 12, 2025 3:06:42 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 4 for 65000 ms
+
+Feb 12, 2025 3:06:47 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 1
+
+Feb 12, 2025 3:06:47 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 1 for 70000 ms
+
+Feb 12, 2025 3:24:30 PM com.thread.inout.ThreadRunner exercise6
+INFO: Exercise 6 : Implementing a Controlled Execution Loop with Thread Dumps
+
+Feb 12, 2025 3:24:30 PM com.thread.task.ExtendedThread run
+INFO: Thread_Name(ExtendedThread - 0) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:24:30 PM com.thread.task.ExtendedThread run
+INFO: Thread_Name(ExtendedThread - 4) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:24:30 PM com.thread.task.ExtendedThread run
+INFO: Thread_Name(ExtendedThread - 3) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:24:30 PM com.thread.task.ExtendedThread run
+INFO: Thread_Name(ExtendedThread - 2) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:24:30 PM com.thread.task.ExtendedThread run
+INFO: Thread_Name(ExtendedThread - 1) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:24:30 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 2 for 80000 ms
+
+Feb 12, 2025 3:24:30 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 3 for 90000 ms
+
+Feb 12, 2025 3:24:30 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 4 for 100000 ms
+
+Feb 12, 2025 3:24:30 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 0 for 60000 ms
+
+Feb 12, 2025 3:24:30 PM com.thread.task.RunnableThread run
+INFO: Thread_Name(RunnableThread - 4) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:24:30 PM com.thread.task.RunnableThread run
+INFO: Thread_Name(RunnableThread - 3) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:24:30 PM com.thread.task.RunnableThread run
+INFO: Thread_Name(RunnableThread - 2) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:24:30 PM com.thread.task.RunnableThread run
+INFO: Thread_Name(RunnableThread - 1) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:24:30 PM com.thread.task.RunnableThread run
+INFO: Thread_Name(RunnableThread - 0) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:24:30 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 3 for 60000 ms
+
+Feb 12, 2025 3:24:30 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 4 for 65000 ms
+
+Feb 12, 2025 3:24:30 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 1 for 70000 ms
+
+Feb 12, 2025 3:24:30 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 2 for 55000 ms
+
+Feb 12, 2025 3:24:30 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 0 for 45000 ms
+
+Feb 12, 2025 3:24:30 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 1 for 50000 ms
+
+Feb 12, 2025 3:25:15 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 0
+
+Feb 12, 2025 3:25:15 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 0 for 45000 ms
+
+Feb 12, 2025 3:25:20 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 1
+
+Feb 12, 2025 3:25:20 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 1 for 50000 ms
+
+Feb 12, 2025 3:25:25 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 2
+
+Feb 12, 2025 3:25:25 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 2 for 55000 ms
+
+Feb 12, 2025 3:25:30 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 0
+
+Feb 12, 2025 3:25:30 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 0 for 60000 ms
+
+Feb 12, 2025 3:25:30 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 3
+
+Feb 12, 2025 3:25:30 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 3 for 60000 ms
+
+Feb 12, 2025 3:25:35 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 4
+
+Feb 12, 2025 3:25:35 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 4 for 65000 ms
+
+Feb 12, 2025 3:25:40 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 1
+
+Feb 12, 2025 3:25:40 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 1 for 70000 ms
+
+Feb 12, 2025 3:25:50 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 2
+
+Feb 12, 2025 3:25:50 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 2 for 80000 ms
+
+Feb 12, 2025 3:26:00 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 3
+
+Feb 12, 2025 3:26:00 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 3 for 90000 ms
+
+Feb 12, 2025 3:26:00 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 0
+
+Feb 12, 2025 3:26:00 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 0 for 45000 ms
+
+Feb 12, 2025 3:26:10 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 4
+
+Feb 12, 2025 3:26:10 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 4 for 100000 ms
+
+Feb 12, 2025 3:26:10 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 1
+
+Feb 12, 2025 3:26:10 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 1 for 50000 ms
+
+Feb 12, 2025 3:26:20 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 2
+
+Feb 12, 2025 3:26:20 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 2 for 55000 ms
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner exercise6
+INFO: 
+Taking Thread Dump 1 at 30 seconds
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 4" Id=28 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 3" Id=27 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 2" Id=26 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 1" Id=25 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 0" Id=24 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 4" Id=23 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 3" Id=22 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 2" Id=21 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 1" Id=20 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 0" Id=19 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "Signal Dispatcher" Id=4 RUNNABLE
+
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@7699a589
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@7699a589
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)
+
+
+Feb 12, 2025 3:26:30 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 0
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@58372a00
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@58372a00
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+
+Feb 12, 2025 3:26:30 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 0 for 60000 ms
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "main" Id=1 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:454)
+	at com.thread.inout.ThreadRunner.captureThreadDump(ThreadRunner.java:123)
+	at com.thread.inout.ThreadRunner.exercise6(ThreadRunner.java:199)
+	at com.thread.inout.ThreadRunner.main(ThreadRunner.java:336)
+
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread Dump (ThreadGroup)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(main) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.getStackTrace(Thread.java:1559)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.inout.ThreadRunner.captureThreadDumpUsingThreadGroup(ThreadRunner.java:146)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.inout.ThreadRunner.exercise6(ThreadRunner.java:200)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.inout.ThreadRunner.main(ThreadRunner.java:336)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 0) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 3
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:26:30 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 3 for 60000 ms
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 1) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 2) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 3) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 4) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 0) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 1) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 2) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 3) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 4) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Dump (All Stack Traces)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 1 | State: TIMED_WAITING
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: Finalizer | State: WAITING
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Object.wait(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: Signal Dispatcher | State: RUNNABLE
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 2 | State: TIMED_WAITING
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: Reference Handler | State: WAITING
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Object.wait(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Object.wait(Object.java:502)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 4 | State: TIMED_WAITING
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 3 | State: TIMED_WAITING
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 3 | State: TIMED_WAITING
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 1 | State: TIMED_WAITING
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 0 | State: TIMED_WAITING
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 4 | State: TIMED_WAITING
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 0 | State: TIMED_WAITING
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: main | State: RUNNABLE
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.dumpThreads(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.getAllStackTraces(Thread.java:1610)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.inout.ThreadRunner.captureThreadDumpUsingAllStackTraces(ThreadRunner.java:158)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.inout.ThreadRunner.exercise6(ThreadRunner.java:201)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.inout.ThreadRunner.main(ThreadRunner.java:336)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 2 | State: TIMED_WAITING
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:26:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:26:40 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 4
+
+Feb 12, 2025 3:26:40 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 4 for 65000 ms
+
+Feb 12, 2025 3:26:45 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 0
+
+Feb 12, 2025 3:26:45 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 0 for 45000 ms
+
+Feb 12, 2025 3:26:50 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 1
+
+Feb 12, 2025 3:26:50 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 1 for 70000 ms
+
+Feb 12, 2025 3:27:00 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 1
+
+Feb 12, 2025 3:27:00 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 1 for 50000 ms
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner exercise6
+INFO: 
+Taking Thread Dump 2 at 60 seconds
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 4" Id=28 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 3" Id=27 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 2" Id=26 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 1" Id=25 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 0" Id=24 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 4" Id=23 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 3" Id=22 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 2" Id=21 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 1" Id=20 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 0" Id=19 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "Signal Dispatcher" Id=4 RUNNABLE
+
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@7699a589
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@7699a589
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)
+
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@58372a00
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@58372a00
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "main" Id=1 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:454)
+	at com.thread.inout.ThreadRunner.captureThreadDump(ThreadRunner.java:123)
+	at com.thread.inout.ThreadRunner.exercise6(ThreadRunner.java:199)
+	at com.thread.inout.ThreadRunner.main(ThreadRunner.java:336)
+
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread Dump (ThreadGroup)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(main) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.getStackTrace(Thread.java:1559)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.inout.ThreadRunner.captureThreadDumpUsingThreadGroup(ThreadRunner.java:146)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.inout.ThreadRunner.exercise6(ThreadRunner.java:200)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.inout.ThreadRunner.main(ThreadRunner.java:336)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 0) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 1) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 2) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 3) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 4) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 0) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 1) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 2) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 3) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 4) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Dump (All Stack Traces)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 1 | State: TIMED_WAITING
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: Finalizer | State: WAITING
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Object.wait(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: Signal Dispatcher | State: RUNNABLE
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 2 | State: TIMED_WAITING
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: Reference Handler | State: WAITING
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Object.wait(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Object.wait(Object.java:502)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 4 | State: TIMED_WAITING
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 3 | State: TIMED_WAITING
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 3 | State: TIMED_WAITING
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 1 | State: TIMED_WAITING
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 0 | State: TIMED_WAITING
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 4 | State: TIMED_WAITING
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 0 | State: TIMED_WAITING
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: main | State: RUNNABLE
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.dumpThreads(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.getAllStackTraces(Thread.java:1610)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.inout.ThreadRunner.captureThreadDumpUsingAllStackTraces(ThreadRunner.java:158)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.inout.ThreadRunner.exercise6(ThreadRunner.java:201)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.inout.ThreadRunner.main(ThreadRunner.java:336)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 2 | State: TIMED_WAITING
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:27:00 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:27:10 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 2
+
+Feb 12, 2025 3:27:10 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 2 for 80000 ms
+
+Feb 12, 2025 3:27:15 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 2
+
+Feb 12, 2025 3:27:15 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 2 for 55000 ms
+
+Feb 12, 2025 3:27:30 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 3
+
+Feb 12, 2025 3:27:30 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 3 for 90000 ms
+
+Feb 12, 2025 3:27:30 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 0
+
+Feb 12, 2025 3:27:30 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 0 for 60000 ms
+
+Feb 12, 2025 3:27:30 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 3
+
+Feb 12, 2025 3:27:30 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 3 for 60000 ms
+
+Feb 12, 2025 3:27:30 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 0
+
+Feb 12, 2025 3:27:30 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 0 for 45000 ms
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner exercise6
+INFO: 
+Taking Thread Dump 3 at 90 seconds
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 4" Id=28 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 3" Id=27 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 2" Id=26 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 1" Id=25 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "RunnableThread - 0" Id=24 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.RunnableThread.run(RunnableThread.java:41)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 4" Id=23 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 3" Id=22 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 2" Id=21 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 1" Id=20 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "ExtendedThread - 0" Id=19 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "Signal Dispatcher" Id=4 RUNNABLE
+
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@7699a589
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@7699a589
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)
+
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@58372a00
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@58372a00
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDump
+INFO: "main" Id=1 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:454)
+	at com.thread.inout.ThreadRunner.captureThreadDump(ThreadRunner.java:123)
+	at com.thread.inout.ThreadRunner.exercise6(ThreadRunner.java:199)
+	at com.thread.inout.ThreadRunner.main(ThreadRunner.java:336)
+
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread Dump (ThreadGroup)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(main) ; Priority(5) ; State(RUNNABLE)
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.getStackTrace(Thread.java:1559)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.inout.ThreadRunner.captureThreadDumpUsingThreadGroup(ThreadRunner.java:146)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.inout.ThreadRunner.exercise6(ThreadRunner.java:200)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.inout.ThreadRunner.main(ThreadRunner.java:336)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 0) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 1) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 2) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 3) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(ExtendedThread - 4) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 0) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 1) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 2) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 3) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: Thread_Name(RunnableThread - 4) ; Priority(5) ; State(TIMED_WAITING)
+
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingThreadGroup
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Dump (All Stack Traces)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 1 | State: TIMED_WAITING
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: Finalizer | State: WAITING
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Object.wait(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: Signal Dispatcher | State: RUNNABLE
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 2 | State: TIMED_WAITING
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: Reference Handler | State: WAITING
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Object.wait(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Object.wait(Object.java:502)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 4 | State: TIMED_WAITING
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 3 | State: TIMED_WAITING
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 3 | State: TIMED_WAITING
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 1 | State: TIMED_WAITING
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: ExtendedThread - 0 | State: TIMED_WAITING
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.ExtendedThread.run(ExtendedThread.java:48)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 4 | State: TIMED_WAITING
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 0 | State: TIMED_WAITING
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: main | State: RUNNABLE
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.dumpThreads(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.getAllStackTraces(Thread.java:1610)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.inout.ThreadRunner.captureThreadDumpUsingAllStackTraces(ThreadRunner.java:158)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.inout.ThreadRunner.exercise6(ThreadRunner.java:201)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.inout.ThreadRunner.main(ThreadRunner.java:336)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: Thread Name: RunnableThread - 2 | State: TIMED_WAITING
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.sleep(Native Method)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: com.thread.task.RunnableThread.run(RunnableThread.java:41)
+Feb 12, 2025 3:27:30 PM com.thread.inout.ThreadRunner captureThreadDumpUsingAllStackTraces
+INFO: java.lang.Thread.run(Thread.java:748)
+Feb 12, 2025 3:27:45 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 4
+
+Feb 12, 2025 3:27:45 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 4 for 65000 ms
+
+Feb 12, 2025 3:27:50 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 4
+
+Feb 12, 2025 3:27:50 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 4 for 100000 ms
+
+Feb 12, 2025 3:27:50 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 1
+
+Feb 12, 2025 3:27:50 PM com.thread.task.RunnableThread run
+INFO: Going to Sleep: RunnableThread - 1 for 50000 ms
+
+Feb 12, 2025 3:28:00 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 1
+
+Feb 12, 2025 3:28:00 PM com.thread.task.ExtendedThread run
+INFO: Going to Sleep: ExtendedThread - 1 for 70000 ms
+
+Feb 12, 2025 3:28:10 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 2
+
+Feb 12, 2025 3:28:10 PM com.thread.task.RunnableThread run
+INFO: RunnableThread - 2 Stopped...
+
+Feb 12, 2025 3:28:15 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 0
+
+Feb 12, 2025 3:28:15 PM com.thread.task.RunnableThread run
+INFO: RunnableThread - 0 Stopped...
+
+Feb 12, 2025 3:28:30 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 2
+
+Feb 12, 2025 3:28:30 PM com.thread.task.ExtendedThread run
+INFO: ExtendedThread - 2 Stopped...
+
+Feb 12, 2025 3:28:30 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 0
+
+Feb 12, 2025 3:28:30 PM com.thread.task.ExtendedThread run
+INFO: ExtendedThread - 0 Stopped...
+
+Feb 12, 2025 3:28:30 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 3
+
+Feb 12, 2025 3:28:30 PM com.thread.task.RunnableThread run
+INFO: RunnableThread - 3 Stopped...
+
+Feb 12, 2025 3:28:40 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 1
+
+Feb 12, 2025 3:28:40 PM com.thread.task.RunnableThread run
+INFO: RunnableThread - 1 Stopped...
+
+Feb 12, 2025 3:28:50 PM com.thread.task.RunnableThread run
+INFO: After sleeping: RunnableThread - 4
+
+Feb 12, 2025 3:28:50 PM com.thread.task.RunnableThread run
+INFO: RunnableThread - 4 Stopped...
+
+Feb 12, 2025 3:29:00 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 3
+
+Feb 12, 2025 3:29:00 PM com.thread.task.ExtendedThread run
+INFO: ExtendedThread - 3 Stopped...
+
+Feb 12, 2025 3:29:10 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 1
+
+Feb 12, 2025 3:29:10 PM com.thread.task.ExtendedThread run
+INFO: ExtendedThread - 1 Stopped...
+
+Feb 12, 2025 3:29:30 PM com.thread.task.ExtendedThread run
+INFO: After sleeping: ExtendedThread - 4
+
+Feb 12, 2025 3:29:30 PM com.thread.task.ExtendedThread run
+INFO: ExtendedThread - 4 Stopped...
+

@@ -1,0 +1,91 @@
+Mar 11, 2025 8:04:16 AM com.regex.inout.RegExRunner exercise1
+INFO: Ex_1: Mobile Number Validation
+Mar 11, 2025 8:04:21 AM com.regex.inout.RegExRunner exercise1
+INFO: Valid  Mobile No
+
+Mar 11, 2025 8:04:22 AM com.regex.inout.RegExRunner exercise2
+INFO: Ex_2: Validating Alphanumeric Strings
+Mar 11, 2025 8:04:27 AM com.regex.inout.RegExRunner exercise2
+INFO: Invalid AlphaNumeric String
+
+Mar 11, 2025 8:04:29 AM com.regex.inout.RegExRunner exercise2
+INFO: Ex_2: Validating Alphanumeric Strings
+Mar 11, 2025 8:04:32 AM com.regex.inout.RegExRunner exercise2
+INFO: Valid AlphaNumeric String
+
+Mar 11, 2025 8:04:55 AM com.regex.inout.RegExRunner main
+INFO: Invalid Input
+Mar 11, 2025 8:05:00 AM com.regex.inout.RegExRunner exercise3a
+INFO: Ex_3a: Starts with Matching String
+Mar 11, 2025 8:05:44 AM com.regex.inout.RegExRunner exercise3a
+INFO: hwegyuagk starts with hwe : true
+
+Mar 11, 2025 8:05:49 AM com.regex.inout.RegExRunner exercise3b
+INFO: Ex_3b: Contains Matching String
+Mar 11, 2025 8:06:00 AM com.regex.inout.RegExRunner exercise3b
+INFO: hgfdjtddj contains dj : true
+
+Mar 11, 2025 8:06:02 AM com.regex.inout.RegExRunner exercise3c
+INFO: Ex_3c: Ends with the Matching String
+Mar 11, 2025 8:06:05 AM com.regex.inout.RegExRunner exercise3c
+INFO: 5443 ends with fgd : false
+
+Mar 11, 2025 8:06:07 AM com.regex.inout.RegExRunner exercise3d
+INFO: Ex_3d: Exact match for Matching String
+Mar 11, 2025 8:06:14 AM com.regex.inout.RegExRunner exercise3d
+INFO: vccfg is a exact match of vccfg : true
+
+Mar 11, 2025 8:06:19 AM com.regex.inout.RegExRunner exercise3d
+INFO: Ex_3d: Exact match for Matching String
+Mar 11, 2025 8:06:24 AM com.regex.inout.RegExRunner exercise3d
+INFO: VCC is a exact match of vcc : false
+
+Mar 11, 2025 8:06:48 AM com.regex.inout.RegExRunner exercise4
+INFO: Ex_4: Case-Insensitive String Matching in a List
+Mar 11, 2025 8:07:20 AM com.regex.inout.RegExRunner exercise4
+INFO: Case_Insensitive - Matched Strings: 
+Mar 11, 2025 8:07:20 AM com.regex.inout.RegExRunner exercise4
+INFO: [qqqq, QQQq]
+
+Mar 11, 2025 8:07:41 AM com.regex.inout.RegExRunner exercise5
+INFO: Ex_5: Email Format Validation
+Mar 11, 2025 8:07:48 AM com.regex.inout.RegExRunner exercise5
+INFO: Valid Email format
+
+Mar 11, 2025 8:08:06 AM com.regex.inout.RegExRunner exercise6
+INFO: Ex_6: Filtering Strings Based on Length Constraints (1 to 6 Characters)
+Mar 11, 2025 8:09:00 AM com.regex.inout.RegExRunner exercise6
+INFO: Ex_6: Filtering Strings Based on Length Constraints (1 to 6 Characters)
+Mar 11, 2025 8:09:26 AM com.regex.inout.RegExRunner exercise6
+INFO: Strings Ranging between Length5-6: 
+Mar 11, 2025 8:09:26 AM com.regex.inout.RegExRunner exercise6
+INFO: [123456, sdfghj, erfgbn]
+
+Mar 11, 2025 8:09:48 AM com.regex.inout.RegExRunner exercise7
+INFO: Ex_7: Mapping Matching Strings Between Two Lists
+Mar 11, 2025 8:10:11 AM com.regex.inout.RegExRunner exercise7
+INFO: Matcher Strings 
+Mar 11, 2025 8:10:15 AM com.regex.inout.RegExRunner exercise7
+INFO: Map Matching Strings Between Two Lists: 
+Mar 11, 2025 8:10:15 AM com.regex.inout.RegExRunner exercise7
+INFO: {1=[0, 1, 2, 7], 2=[3, 6, 9], 3=[4, 8]}
+
+Mar 11, 2025 8:10:34 AM com.regex.inout.RegExRunner exercise8
+INFO: Ex_8: Extracting HTML Tags from a Raw HTML String
+Mar 11, 2025 8:11:18 AM com.regex.inout.RegExRunner exercise8
+INFO: HTML Tags in the Input: 
+Mar 11, 2025 8:11:18 AM com.regex.inout.RegExRunner exercise8
+INFO: 1. <div>
+Mar 11, 2025 8:11:18 AM com.regex.inout.RegExRunner exercise8
+INFO: 2. <p>
+Mar 11, 2025 8:11:18 AM com.regex.inout.RegExRunner exercise8
+INFO: 3. </p>
+Mar 11, 2025 8:11:18 AM com.regex.inout.RegExRunner exercise8
+INFO: 4. <code>
+Mar 11, 2025 8:11:18 AM com.regex.inout.RegExRunner exercise8
+INFO: 5. </CODE>
+Mar 11, 2025 8:11:18 AM com.regex.inout.RegExRunner exercise8
+INFO: 6. </div>
+Mar 11, 2025 8:11:18 AM com.regex.inout.RegExRunner exercise8
+INFO: 
+

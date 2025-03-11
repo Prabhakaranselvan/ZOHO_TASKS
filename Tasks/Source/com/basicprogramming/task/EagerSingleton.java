@@ -7,11 +7,11 @@ public class EagerSingleton implements Serializable, Cloneable
 {
 	private static final long serialVersionUID = 1L;
 
-	private static final EagerSingleton instance = new EagerSingleton();
+	private static final EagerSingleton INSTANCE = new EagerSingleton();
 
 	private EagerSingleton() 
 	{
-		if (instance != null) // Prevent Reflection from breaking Singleton
+		if (INSTANCE != null) // Prevent Reflection from breaking Singleton
 		{
             throw new IllegalStateException("Singleton instance already created");
         }
@@ -19,7 +19,7 @@ public class EagerSingleton implements Serializable, Cloneable
 	
 	public static EagerSingleton getInstance() 
 	{
-	  return instance;
+	  return INSTANCE;
 	}
 	
 	protected Object readResolve() // Prevents new instance creation during deserialization

@@ -1,0 +1,7 @@
+Feb 14, 2025 6:20:58 PM com.thread.inout.ThreadRunner main
+SEVERE: An exception occurred
+java.util.NoSuchElementException: No line found
+	at java.util.Scanner.nextLine(Scanner.java:1540)
+	at com.utilshub.UtilsScan.getString(UtilsScan.java:13)
+	at com.thread.inout.ThreadRunner.main(ThreadRunner.java:311)
+

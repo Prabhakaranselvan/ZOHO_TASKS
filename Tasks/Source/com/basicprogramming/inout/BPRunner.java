@@ -20,18 +20,18 @@ import com.basicprogramming.task.BPDateTime;
 import com.basicprogramming.task.BPFile;
 import com.basicprogramming.task.BPProperties;
 import com.basicprogramming.task.BillPughSingleton;
+import com.basicprogramming.task.Car;
 import com.basicprogramming.task.RainbowColour;
 import com.exception.InvalidException;
-import com.utilshub.MessageInfo;
 import com.utilshub.Person;
 import com.utilshub.UtilsCheck;
-import com.utilshub.UtilsLog;
+import com.utilshub.LoggerUtils;
 import com.utilshub.UtilsScan;
 import com.utilshub.UtilsSize;
 
 public class BPRunner 
 {
-	private static final Logger LOGGER = UtilsLog.createLogger(BPRunner.class, "Basic Programming");
+	private static final Logger LOGGER = LoggerUtils.createLogger(BPRunner.class, "Basic Programming");
 	
 	BPFile bpFile = new BPFile();
 	BPProperties bpProperties = new BPProperties();
@@ -118,26 +118,26 @@ public class BPRunner
     private void exercise6() throws InvalidException 
     {
         LOGGER.info("Ex_6: Create a POJO class with String & Integer variables and a constructor to initialize them\n");
-        System.out.print("Enter Message: ");
-		String message = UtilsScan.getString();
-		 System.out.print("Enter Number: ");
+        System.out.print("Enter Car Model: ");
+		String model = UtilsScan.getString();
+		System.out.print("Enter Number: ");
 		int number =UtilsScan.getInteger();
-        MessageInfo obj = new MessageInfo(message, number);
+		Car obj = new Car(model, number);
         LOGGER.info(obj + "\n");
     }
 
     private void exercise7() throws InvalidException 
     {
         LOGGER.info("Ex_7: Create an instance of POJO using default constructor and use setters & getters\n");
-        System.out.print("Enter Message: ");
-		String message = UtilsScan.getString();
-		 System.out.print("Enter Number: ");
+        System.out.print("Enter Car Model: ");
+		String model = UtilsScan.getString();
+		 System.out.print("Enter Car Number: ");
 		int number = UtilsScan.getInteger();
         
-		MessageInfo obj = new MessageInfo();
-        obj.setMessage(message);
+		Car obj = new Car();
+        obj.setModel(model);
         obj.setNumber(number);
-        LOGGER.info("Message: " + obj.getMessage() + "\n");
+        LOGGER.info("Message: " + obj.getModel() + "\n");
         LOGGER.info("Number: " + obj.getNumber() + "\n");
     }
 
