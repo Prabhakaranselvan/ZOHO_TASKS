@@ -51,7 +51,7 @@ public class JDBCTask
 	    }
 	}
 	
-	public void addEmployees(List<Employee> list) throws InvalidException 
+	public boolean addEmployees(List<Employee> list) throws InvalidException 
 	{
 		UtilsCheck.checkNull(list);
 		String sql = "INSERT INTO Employee (NAME, MOBILE, EMAIL, DEPARTMENT) VALUES (?, ?, ?, ?)";
@@ -65,13 +65,23 @@ public class JDBCTask
 	            pstmt.setString(2, ee.getMobile());
 	            pstmt.setString(3, ee.getEmail());
 	            pstmt.setString(4, ee.getDepartment());
-	            pstmt.executeUpdate();
+	            pstmt.addBatch();
+	        }
+			int[] result = pstmt.executeBatch();
+	        for (int res : result)
+	        {
+	        	int fail = Statement.EXECUTE_FAILED;
+	            if (res == fail) 
+	            {
+	                return false;
+	            }
 	        }
 		}
         catch (SQLException e) 
         {
             throw new InvalidException("Employees List Insertion Failed", e);
         }
+		return true; 
     }
 	
 	public List<Employee> getEmployeeByName(String employeeName) throws InvalidException 
@@ -86,10 +96,6 @@ public class JDBCTask
             pstmt.setString(1, employeeName);
             try (ResultSet rs = pstmt.executeQuery())
             {
-	            if (!rs.isBeforeFirst()) 
-	            {
-	                return list;
-	            }
 	            while(rs.next())
 	        	{
 	        		Employee ee = new Employee();
@@ -98,6 +104,7 @@ public class JDBCTask
 	                ee.setMobile(rs.getString("MOBILE"));
 	                ee.setEmail(rs.getString("EMAIL"));
 	                ee.setDepartment(rs.getString("DEPARTMENT"));
+//	        		setEmployeeField(ee, rs);
 	                list.add(ee);
 	        	}
             }
@@ -108,7 +115,54 @@ public class JDBCTask
         }
         return list;
     }
-	
+
+//	private void setEmployeeField(Employee ee, ResultSet rs) throws SQLException 
+//	{
+//		ResultSetMetaData rsmd = rs.getMetaData();
+//		int count = rsmd.getColumnCount();
+//		String type;
+//		String column;
+//		
+//		for (int i=1; i<=count; i++) 
+//    	{
+//			type = rsmd.getColumnTypeName(i);
+//			column = rsmd.getColumnLabel(i);
+//		
+//		    if (type.equals("INT")) 
+//		    { 
+//		        int value = rs.getInt(i);
+//		        switch (column) 
+//		        {
+//	            case "EMPLOYEE_ID":
+//	            	ee.setEmployeeId(value);
+//	            	break;
+//		        }
+//	        }
+//		    
+//		    else if (type.equals("VARCHAR")) 
+//		    {
+//		        String value = rs.getString(i);
+//		        switch (column) 
+//		        {
+//		            case "NAME":
+//		                ee.setName(value);
+//		                break;
+//		                
+//		            case "MOBILE":
+//		                ee.setMobile(value);
+//		                break;
+//		                
+//		            case "EMAIL":
+//		                ee.setEmail(value);
+//		                break;
+//		                
+//		            case "DEPARTMENT":
+//		                ee.setDepartment(value);
+//		                break;
+//		        }
+//		    }
+//        }
+//	}
 	
 	public void updateEmployeeDetails(int employeeId, String fieldToUpdate, String newValue) throws InvalidException 
 	{
@@ -140,10 +194,6 @@ public class JDBCTask
         	pstmt.setInt(1, num);
             try (ResultSet rs = pstmt.executeQuery())
             {
-	            if (!rs.isBeforeFirst()) 
-	            {
-	                return list;
-	            }
 	            while(rs.next())
 	        	{
 	        		Employee ee = new Employee();
@@ -177,10 +227,6 @@ public class JDBCTask
         	pstmt.setInt(1, limit);
             try (ResultSet rs = pstmt.executeQuery())
             {
-	            if (!rs.isBeforeFirst()) 
-	            {
-	                return list;
-	            }
 	            while(rs.next())
 	        	{
 	        		Employee ee = new Employee();
@@ -252,10 +298,11 @@ public class JDBCTask
 	            pstmt.setString(2, dep.getName());
 	            pstmt.setString(3, dep.getAge());
 	            pstmt.setString(4, dep.getRelationship());
-	            pstmt.executeUpdate();
+	            pstmt.addBatch();
 	        }
+			pstmt.executeBatch();
         }
-        catch (SQLException e) 
+        catch (SQLException e)
         {
             throw new InvalidException("Dependent List Insertion Failed", e);
         }
@@ -274,10 +321,6 @@ public class JDBCTask
         	pstmt.setInt(1, employeeId);
             try (ResultSet rs = pstmt.executeQuery())
             {
-	            if (!rs.isBeforeFirst()) 
-	            {
-	                return null;
-	            }
 	            while(rs.next())
 	        	{
 	            	Dependent dep = new Dependent();
@@ -298,6 +341,7 @@ public class JDBCTask
 	
 	public List<Dependent> getDependentsByEmployeeName(String employeeName) throws InvalidException 
 	{
+		UtilsCheck.checkNull(employeeName);
 		String sql = "SELECT e.EMPLOYEE_ID, d.NAME, d.AGE, d.RELATIONSHIP FROM Employee e "
 				+ "JOIN Dependents d ON e.EMPLOYEE_ID = d.EMPLOYEE_ID WHERE e.NAME = ?";
 		
@@ -308,10 +352,6 @@ public class JDBCTask
         	pstmt.setString(1, employeeName);
             try (ResultSet rs = pstmt.executeQuery())
             {
-	            if (!rs.isBeforeFirst()) 
-	            {
-	                return null;
-	            }
 	            while(rs.next())
 	        	{
 	            	Dependent dep = new Dependent();
@@ -345,10 +385,6 @@ public class JDBCTask
         	pstmt.setInt(1, limit);
             try (ResultSet rs = pstmt.executeQuery())
             {
-	            if (!rs.isBeforeFirst()) 
-	            {
-	                return null;
-	            }
 	            while(rs.next())
 	        	{
 	            	Dependent dep = new Dependent();

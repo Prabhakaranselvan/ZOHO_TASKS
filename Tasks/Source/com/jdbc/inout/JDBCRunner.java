@@ -43,8 +43,8 @@ public class JDBCRunner
             ee.setDepartment(UtilsScan.getString());
             list.add(ee);
 		}
-		task.addEmployees(list);
-		System.out.println("Employees Added Succesfully");
+		
+		System.out.println(task.addEmployees(list) ? "Employees Added Succesfully" : "Employees List Insertion Failed");
 	}
 	
 	private void exercise3() throws InvalidException
@@ -265,7 +265,8 @@ public class JDBCRunner
         System.out.print("Enter Employee ID to fetch dependents: ");
         int employeeId = UtilsScan.getInteger();
         List<Dependent> list = task.getDependentsByEmployeeId(employeeId);
-        if (list==null)
+        int size = UtilsSize.getSize(list);
+        if (size==0)
         {
         	System.out.println("No dependents found.");
         }
@@ -290,7 +291,8 @@ public class JDBCRunner
 		System.out.print("Enter Employee Name to fetch dependents: ");
         String name = UtilsScan.getString();
         List<Dependent> list = task.getDependentsByEmployeeName(name);
-        if (list==null)
+        int size = UtilsSize.getSize(list);
+        if (size==0)
         {
         	System.out.println("No dependents found.");
         }
@@ -321,7 +323,8 @@ public class JDBCRunner
         int limit = UtilsScan.getInteger();
         
         List<Dependent> list = task.getDependentsForFirstNEmployees(limit);
-        if (list==null)
+        int size = UtilsSize.getSize(list);
+        if (size==0)
         {
         	System.out.println("No employees found.");
         }
