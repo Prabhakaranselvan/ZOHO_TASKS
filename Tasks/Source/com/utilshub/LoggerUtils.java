@@ -10,7 +10,7 @@ import com.exception.InvalidException;
 
 public class LoggerUtils 
 {	
-	public static Logger createLogger(Class<?> clazz, String subFolder)
+	public static final Logger createLogger(Class<?> clazz, String subFolder)
 	{
 		try 
 		{

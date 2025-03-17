@@ -2,8 +2,6 @@ package com.thread.task;
 
 import java.util.logging.Logger;
 
-import com.utilshub.ThreadLogger;
-
 public class RunnableThread implements Runnable
 {
 private Integer sleepTime = null;

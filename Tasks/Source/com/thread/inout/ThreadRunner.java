@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 import com.exception.InvalidException;
 import com.thread.task.ExtendedThread;
 import com.thread.task.RunnableThread;
-import com.utilshub.ThreadLogger;
+import com.thread.task.ThreadLogger;
 import com.utilshub.UtilsScan;
 
 public class ThreadRunner 
